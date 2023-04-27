@@ -4,6 +4,9 @@ from rest_framework.response import Response
 
 from .serializers import RegisterSerializer, LoginSerializer
 
+from django.http import HttpResponse
+from django.views.generic import TemplateView
+
 class RegisterView(generics.CreateAPIView) : # CreateAPIView(generics) 사용 구현
     queryset = User.objects.all()
     serializer_class = RegisterSerializer # 회원가입 기능
@@ -16,6 +19,13 @@ class LoginView(generics.GenericAPIView) : # 특별한 제너릭을 사용하지
         serializer.is_valid(raise_exception = True)
         token = serializer.validated_data # validate()의 리턴 값인 Token을 받아온다.
         return Response({"token" : token.key}, status=status.HTTP_200_OK)
+
+'''
+def index(request):
+    return HttpResponse("Hello World!!!")
+'''
+class menu_index(TemplateView):
+    template_name = 'index.html'
 
 
 
