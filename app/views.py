@@ -24,8 +24,23 @@ class LoginView(generics.GenericAPIView) : # 특별한 제너릭을 사용하지
 def index(request):
     return HttpResponse("Hello World!!!")
 '''
-class menu_index(TemplateView):
+class index(TemplateView):
     template_name = 'index.html'
+
+class join(TemplateView):
+    template_name = 'app\english\join.html'
+
+class login(TemplateView):
+    template_name = 'app\english\login.html'
+    
+class mypage(TemplateView):
+    template_name = 'app\english\mypage.html'
+
+class rank(TemplateView):
+    template_name = 'app\english\\rank.html'
+
+class study(TemplateView):
+    template_name = 'app\english\study.html'
 
 
 
