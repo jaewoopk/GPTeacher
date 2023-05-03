@@ -21,14 +21,15 @@
     </div>
 
     <div class="join-form">
-        <form>
-          <b class="name">ID</b><br>
-          <input type="text" name="email" class="text-field" placeholder="id"><br>
-          <input type="submit" value="check" class="check-btn"><br>
-          <b class="name">Password</b><br>
-          <input type="password" name="password" class="text-field" placeholder="password"><br>
-          <input type="submit" value="check" class="check-btn"><br>
-          <input type="submit" value="join" class="submit-btn">
+        <form method="POST" action="../jointtest/" enctype="multipart/form-data">
+            {% csrf_token %}
+            <b class="name">ID</b><br>
+            <input type="text" name="email" class="text-field" placeholder="id"><br>
+            <input type="submit" value="check" class="check-btn"><br>
+            <b class="name">Password</b><br>
+            <input type="password" name="password" class="text-field" placeholder="password"><br>
+            <input type="submit" value="check" class="check-btn"><br>
+            <input type="submit" value="join" class="submit-btn">
         </form>
     </div> 
 

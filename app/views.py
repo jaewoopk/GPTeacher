@@ -6,6 +6,8 @@ from .serializers import RegisterSerializer, LoginSerializer
 
 from django.http import HttpResponse
 from django.views.generic import TemplateView
+from django.views.generic import View
+from django.shortcuts import render
 
 class RegisterView(generics.CreateAPIView) : # CreateAPIView(generics) 사용 구현
     queryset = User.objects.all()
@@ -41,6 +43,19 @@ class rank(TemplateView):
 
 class study(TemplateView):
     template_name = 'app\english\study.html'
+
+class jointest(View):
+    template_name = 'app\english\jointtest.html'
+    
+    def post(self, request, *args, **kwargs):
+        result = {
+            'insertid' : request.POST['email'],
+            'insertpassword' : request.POST['password'],
+        }
+        print(request.POST['email'])
+        print(request.POST['password'])
+        return render(request, self.template_name, context=result)
+        
 
 
 

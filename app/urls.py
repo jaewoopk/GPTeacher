@@ -1,6 +1,6 @@
 from django.urls import path
 from django.shortcuts import redirect
-from .views import RegisterView, LoginView, index, join, login, mypage, rank, study
+from .views import RegisterView, LoginView, index, join, login, mypage, rank, study, jointest
 
 from . import views
 
@@ -17,4 +17,6 @@ urlpatterns = [
     path('english/mypage/', mypage.as_view(), name= 'mypage'),
     path('english/rank/', rank.as_view(), name= 'rank'),
     path('english/study/', study.as_view(), name= 'study'),
+
+    path('english/jointtest/', jointest.as_view(), name= 'test'),
 ]
