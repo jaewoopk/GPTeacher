@@ -7,9 +7,9 @@ from . import views
 app_name = 'apps'
 
 urlpatterns = [
-    path('register/', RegisterView.as_view()),
-    path('login/', LoginView.as_view()),
-    path('index/', index.as_view()),
+    #path('register/', RegisterView.as_view()),
+    #path('login/', LoginView.as_view()),
+    #path('index/', index.as_view()),
 
     path('english/', lambda r: redirect('apps:join')),
     path('english/join/', join.as_view(), name= 'join'),
@@ -17,6 +17,7 @@ urlpatterns = [
     path('english/mypage/', mypage.as_view(), name= 'mypage'),
     path('english/rank/', rank.as_view(), name= 'rank'),
     path('english/study/', study.as_view(), name= 'study'),
-
     path('english/jointtest/', jointest.as_view(), name= 'test'),
+
+    path('english/register/', views.register),
 ]

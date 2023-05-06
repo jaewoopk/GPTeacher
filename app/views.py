@@ -8,6 +8,8 @@ from django.http import HttpResponse
 from django.views.generic import TemplateView
 from django.views.generic import View
 from django.shortcuts import render
+from django.contrib.auth.hashers import make_password
+from .models import User as appUser
 
 class RegisterView(generics.CreateAPIView) : # CreateAPIView(generics) 사용 구현
     queryset = User.objects.all()
@@ -56,6 +58,29 @@ class jointest(View):
         print(request.POST['password'])
         return render(request, self.template_name, context=result)
         
+def register(request):
+    if request.method == 'GET' :
+        return render(request, 'app\english\jointtest.html')
+
+    elif request.method == 'POST' :
+        username = request.POST.get('email', None)
+        password = request.POST.get('password', None)
+        re_password = request.POST.get('password', None)
+        print(request.POST['email'])
+        print(request.POST['password'])
+
+        res_data = {}
+        if not (username and password and re_password) :
+            res_data['error'] = '전부 입력해야 합니다'
+        if password != re_password :
+            res_data['error'] = '비밀번호가 다릅니다'
+        else :
+            user = appUser(userid=username, password=make_password(password))
+            user.save()
+        return render(request, 'app\english\jointtest.html', res_data)
+
+        
+
 
 
 
