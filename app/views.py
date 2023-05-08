@@ -7,9 +7,10 @@ from .serializers import RegisterSerializer, LoginSerializer
 from django.http import HttpResponse
 from django.views.generic import TemplateView
 from django.views.generic import View
-from django.shortcuts import render
-from django.contrib.auth.hashers import make_password
+from django.shortcuts import render, redirect
+from django.contrib.auth.hashers import make_password, check_password
 from .models import User as appUser
+
 
 class RegisterView(generics.CreateAPIView) : # CreateAPIView(generics) 사용 구현
     queryset = User.objects.all()
@@ -33,10 +34,10 @@ class index(TemplateView):
 
 class join(TemplateView):
     template_name = 'app\english\join.html'
-
+'''
 class login(TemplateView):
     template_name = 'app\english\login.html'
-    
+    '''
 class mypage(TemplateView):
     template_name = 'app\english\mypage.html'
 
@@ -72,16 +73,42 @@ def register(request):
         res_data = {}
         if not (username and password and re_password) :
             res_data['error'] = '전부 입력해야 합니다'
-        if password != re_password :
+            print("error1")
+        elif password != re_password :
             res_data['error'] = '비밀번호가 다릅니다'
+            print("error2")
         else :
             user = appUser(userid=username, password=make_password(password))
             user.save()
-        return render(request, 'app\english\jointtest.html', res_data)
+        return render(request, 'app\english\login.html', res_data)
 
         
+def login(request) :
+    response_data = {}
 
+    if request.method == 'GET' :
+        return render(request, 'app\english\login.html')
 
+    elif request.method == 'POST' :
+        log_username = request.POST.get('email', None)
+        log_password = request.POST.get('password', None)
+
+        if not (log_username and log_password) :
+            response_data['error'] = '전부 입력해야 합니다'
+            print("error1")
+        else :
+            dbuser = appUser.objects.get(userid=log_username)
+
+            if check_password(log_password, dbuser.password):
+                request.session['user'] = dbuser.id
+                print("aaaaaaa")
+                print(request.session['user'])
+                return redirect('apps:login')
+            else :
+                response_data['error'] = '비밀번호 오류'
+                print("bbbbbbb")
+
+        return render(request, 'app\english\login.html', response_data)
 
 
 # # --> FBV : Function Based View = 함수 기반 뷰
