@@ -59,6 +59,13 @@ CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'projectweb.urls'
 
+#SESSION
+
+SESSION_COOKIE_AGE = 300
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_SAVE_EVERY_REQUEST = True
+SESSION_TIMEOUT_REDIRECT = 'english/login/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

@@ -37,16 +37,19 @@ class join(TemplateView):
 '''
 class login(TemplateView):
     template_name = 'app\english\login.html'
-    '''
+'''
+'''
 class mypage(TemplateView):
     template_name = 'app\english\mypage.html'
-
+'''
+'''
 class rank(TemplateView):
     template_name = 'app\english\\rank.html'
-
+'''
+'''
 class study(TemplateView):
     template_name = 'app\english\study.html'
-
+'''
 class jointest(View):
     template_name = 'app\english\jointtest.html'
     
@@ -101,15 +104,50 @@ def login(request) :
 
             if check_password(log_password, dbuser.password):
                 request.session['user'] = dbuser.id
-                print("aaaaaaa")
-                print(request.session['user'])
-                return redirect('apps:login')
+                request.session.get_expire_at_browser_close()
+                return redirect('apps:study')
             else :
                 response_data['error'] = '비밀번호 오류'
-                print("bbbbbbb")
+                
 
         return render(request, 'app\english\login.html', response_data)
 
+def logout(request) :
+    request.session.pop('user')
+    return redirect('apps:login')
+
+def home(request) :
+    user_id = request.session.get('user')
+    if user_id :
+        dbuser = appUser.objects.get(pk=user_id)
+        return HttpResponse(dbuser.userid)
+    return HttpResponse('로그인 필요')
+
+
+def study(request) :
+    if request.method == 'GET' :
+        if 'user' in request.session:
+            print("aaaa")
+            return render(request, 'app\english\study.html')
+        else :
+            return redirect('apps:login')
+
+def rank(request) :
+    if request.method == 'GET' :
+        if 'user' in request.session:
+            print("ank")
+            return render(request, 'app\english\\rank.html')
+        else :
+            return redirect('apps:login')
+
+def mypage(request) :
+    if request.method == 'GET' :
+        if request.session.get('user') != None :
+            print("page", request.session.get('user'))
+            return render(request, 'app\english\mypage.html')
+        else :
+            print("page2", request.session.get('user'))
+            return redirect('apps:login')
 
 # # --> FBV : Function Based View = 함수 기반 뷰
 # @api_view(['GET']) # Decorator -> 함수를 꾸미는 역할(함수에 대한 성격을 표시해주는 표기법)
