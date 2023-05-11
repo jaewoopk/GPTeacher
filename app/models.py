@@ -38,3 +38,26 @@ class User(models.Model) :
 
     class Meta:
         db_table = 'test_user'
+
+# -------------------------> mysql에서 뽑아온 문장 DB-----------------------------
+
+# This is an auto-generated Django model module.
+# You'll have to do the following manually to clean this up:
+#   * Rearrange models' order
+#   * Make sure each model has one field with primary_key=True
+#   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
+#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+# Feel free to rename the models, but don't rename db_table values or field names.
+
+class Sentencedata(models.Model):
+    idsentencedata = models.IntegerField(db_column='idsentenceData', primary_key=True)  # Field name made lowercase.
+    sentencedata_contents = models.CharField(db_column='sentenceData_contents', max_length=200)  # Field name made lowercase.
+    sentencedata_word1 = models.CharField(db_column='sentenceData_word1', max_length=45)  # Field name made lowercase.
+    sentencedata_word2 = models.CharField(db_column='sentenceData_word2', max_length=45)  # Field name made lowercase.
+    sentencedata_word3 = models.CharField(db_column='sentenceData_word3', max_length=45)  # Field name made lowercase.
+    sentencedata_word4 = models.CharField(db_column='sentenceData_word4', max_length=45)  # Field name made lowercase.
+    sentencedata_answerword = models.CharField(db_column='sentenceData_answerword', max_length=45)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'sentenceData'

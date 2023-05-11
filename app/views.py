@@ -33,7 +33,7 @@ class index(TemplateView):
     template_name = 'index.html'
 
 class join(TemplateView):
-    template_name = 'app\english\join.html'
+    template_name = 'app/english/join.html'
 '''
 class login(TemplateView):
     template_name = 'app\english\login.html'
@@ -51,7 +51,7 @@ class study(TemplateView):
     template_name = 'app\english\study.html'
 '''
 class jointest(View):
-    template_name = 'app\english\jointtest.html'
+    template_name = 'app/english/jointtest.html'
     
     def post(self, request, *args, **kwargs):
         result = {
@@ -64,7 +64,7 @@ class jointest(View):
         
 def register(request):
     if request.method == 'GET' :
-        return render(request, 'app\english\jointtest.html')
+        return render(request, 'app/english/jointtest.html')
 
     elif request.method == 'POST' :
         username = request.POST.get('email', None)
@@ -83,14 +83,14 @@ def register(request):
         else :
             user = appUser(userid=username, password=make_password(password))
             user.save()
-        return render(request, 'app\english\login.html', res_data)
+        return render(request, 'app/english/login.html', res_data)
 
         
 def login(request) :
     response_data = {}
 
     if request.method == 'GET' :
-        return render(request, 'app\english\login.html')
+        return render(request, 'app/english/login.html')
 
     elif request.method == 'POST' :
         log_username = request.POST.get('email', None)
@@ -110,7 +110,7 @@ def login(request) :
                 response_data['error'] = '비밀번호 오류'
                 
 
-        return render(request, 'app\english\login.html', response_data)
+        return render(request, 'app/english/login.html', response_data)
 
 def logout(request) :
     request.session.pop('user')
@@ -128,7 +128,7 @@ def study(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
             print("aaaa")
-            return render(request, 'app\english\study.html')
+            return render(request, 'app/english/study.html')
         else :
             return redirect('apps:login')
 
@@ -136,7 +136,7 @@ def rank(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
             print("ank")
-            return render(request, 'app\english\\rank.html')
+            return render(request, 'app/english/rank.html')
         else :
             return redirect('apps:login')
 
@@ -144,7 +144,7 @@ def mypage(request) :
     if request.method == 'GET' :
         if request.session.get('user') != None :
             print("page", request.session.get('user'))
-            return render(request, 'app\english\mypage.html')
+            return render(request, 'app/english/mypage.html')
         else :
             print("page2", request.session.get('user'))
             return redirect('apps:login')

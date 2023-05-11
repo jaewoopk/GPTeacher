@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from . import my_settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -89,27 +90,30 @@ WSGI_APPLICATION = 'projectweb.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 # 기존에 django.db.backends의 sqlite3를 사용 -> mySQL로 전환
-DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.sqlite3',
-         'NAME': BASE_DIR / 'db.sqlite3',
-     }
- }
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.sqlite3',
+#          'NAME': BASE_DIR / 'db.sqlite3',
+#      }
+#  }
 
-'''
+# 데이터베이스 mysql로 전환
+# 현재 name, user, password는 박재우 노트북의 mysql로 되어있습니다.
 DATABASES = {
     'default' : {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sqlTest',
+        'NAME': 'Capstone_6',
         'USER': 'root',
-        'PASSWORD': '1234',
+        'PASSWORD': 'qkrwodn00!',
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
 
-'''
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'django-insecure-)@+u*-5#=zog(h1ac*tfd-gjbl$$cpj3z90a*ja*um8s9u^v_i'
 
+# SECURITY WARNING: don't run with debug turned on in production!
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
