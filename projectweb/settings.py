@@ -102,9 +102,9 @@ WSGI_APPLICATION = 'projectweb.wsgi.application'
 DATABASES = {
     'default' : {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Capstone_6',
+        'NAME': 'capstone6',
         'USER': 'root',
-        'PASSWORD': 'qkrwodn00!',
+        'PASSWORD': 'whdgns4321!',
         'HOST': 'localhost',
         'PORT': '3306',
     }

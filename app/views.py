@@ -10,7 +10,7 @@ from django.views.generic import View
 from django.shortcuts import render, redirect
 from django.contrib.auth.hashers import make_password, check_password
 from .models import User as appUser
-
+from .models import Sentencedata
 
 class RegisterView(generics.CreateAPIView) : # CreateAPIView(generics) 사용 구현
     queryset = User.objects.all()
@@ -130,6 +130,9 @@ def study(request) :
             print("aaaa")
             return render(request, 'app/english/study.html')
         else :
+            datas11 = Sentencedata.objects.all().order_by('idsentencedata')[:1]
+            context = {'Sentencedata': datas11}
+            return render(request, 'app/english/study.html', context)
             return redirect('apps:login')
 
 def rank(request) :

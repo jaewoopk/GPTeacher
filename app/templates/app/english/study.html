@@ -22,6 +22,7 @@
     </div>
 
     <div class="content">
+        {% for sentence in Sentencedata %}
         <div class="chatGPT">
             <img src="../../../static/app/images/chatGPT.jpg" width="180" id="chatGPTimg">
 
@@ -29,7 +30,7 @@
                 <span class="quiz_type"></span>
                 <div class="quiz_question">
                     <span class="number">1</span>
-                    <div class="ask">Henry will make a _______ on the new manufacturing process</div>
+                    <div class="ask">{{sentence.sentencedata_contents}}</div>
                 </div>
 
                 <div class="quiz_try">
@@ -37,22 +38,22 @@
                         <form name="select">
                             <label for="select1">
                                 <input type="radio" id="select1" name="userAns" value="v1" >
-                                <span class="choice">(a) present</span><br>
+                                <span class="choice">{{sentence.sentencedata_word1}}</span><br>
                             </label>
     
                             <label for="select2">
                                 <input type="radio" id="select2" name="userAns" value="v2" >
-                                <span class="choice">(b) presentation</span><br>
+                                <span class="choice">{{sentence.sentencedata_word2}}</span><br>
                             </label>
     
                             <label for="select3">
                                 <input type="radio" id="select3" name="userAns" value="v3" >
-                                <span class="choice">(c) presents</span><br>
+                                <span class="choice">{{sentence.sentencedata_word3}}</span><br>
                             </label>
     
                             <label for="select4">
                                 <input type="radio" id="select4" name="userAns" value="v4" >
-                                <span class="choice">(d) present</span><br>
+                                <span class="choice">{{sentence.sentencedata_word4}}</span><br>
                             
                             </label>
                         
@@ -80,7 +81,7 @@
             </div>
             
         </div>
-
+        {% endfor %}
     </div>
     
     <script src="studyscript.js"></script>
