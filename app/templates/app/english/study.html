@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnglishStudy</title>
     <link rel="stylesheet" href="../../../static/app/css/styles.css">
-    <script src="studyscript.js"></script>
+    
 
 </head>
 <body>
@@ -22,46 +22,45 @@
     </div>
 
     <div class="content">
-        {% for sentence in Sentencedata %}
         <div class="chatGPT">
-            <img src="../../../static/app/images/chatGPT.jpg" width="180" id="chatGPTimg">
+            <img src="../../../static/app/images/chatGPT.jpg" width="200" id="chatGPTimg">
 
-            <div class="quiz">
+            <div class = quiz>
                 <span class="quiz_type"></span>
                 <div class="quiz_question">
-                    <span class="number">1</span>
-                    <div class="ask">{{sentence.sentencedata_contents}}</div>
+                    <span class="number"></span>
+                    <div class="ask"></div>
                 </div>
 
                 <div class="quiz_try">
                     <div class="quiz_selects">
-                        <form name="select">
+                        <form name="select_big">
                             <label for="select1">
-                                <input type="radio" id="select1" name="userAns" value="v1" >
-                                <span class="choice">{{sentence.sentencedata_word1}}</span><br>
+                                <input type="radio" id="select1" class="select" name="userAns" value="1" >
+                                <span class="choice"></span><br>
                             </label>
     
                             <label for="select2">
-                                <input type="radio" id="select2" name="userAns" value="v2" >
-                                <span class="choice">{{sentence.sentencedata_word2}}</span><br>
+                                <input type="radio" id="select2" class="select" name="userAns" value="2" >
+                                <span class="choice"></span><br>
                             </label>
     
                             <label for="select3">
-                                <input type="radio" id="select3" name="userAns" value="v3" >
-                                <span class="choice">{{sentence.sentencedata_word3}}</span><br>
+                                <input type="radio" id="select3" class="select" name="userAns" value="3" >
+                                <span class="choice"></span><br>
                             </label>
     
                             <label for="select4">
-                                <input type="radio" id="select4" name="userAns" value="v4" >
-                                <span class="choice">{{sentence.sentencedata_word4}}</span><br>
+                                <input type="radio" id="select4" class="select" name="userAns" value="4" >
+                                <span class="choice"></span><br>
                             
                             </label>
-                        
-                            <input type="submit" value="submit" id="ans-btn"><br>
-                            <div class="result"></div>
-                            
                         </form>
                     </div>
+
+                    <input type="submit" value="submit" class="confirm" id="ans-btn"><br>
+                    <div class="result"></div>
+
                     
                     <form name="control-quiz">
                         <input type="submit" value="▷" id="next-btn">
@@ -70,22 +69,21 @@
 
                 </div>
             </div>
-
         </div>
+
 
         <div class="user">
             <img src="../../../static/app/images/user.jpg" width="180" id="userimg">
 
             <div class="right">
-                <p id="change">(b) presentation</p> 
+                <p id="change"></p> 
             </div>
             
         </div>
-        {% endfor %}
+
     </div>
     
     <script src="studyscript.js"></script>
-    
     
 
 </body>
