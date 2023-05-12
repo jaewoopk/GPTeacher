@@ -32,35 +32,42 @@
                     <div class="ask">Henry will make a _______ on the new manufacturing process</div>
                 </div>
 
-                <form name="select">
-                    <label for="select1">
-                        <input type="radio" id="select1" name="userAns" value="v1" >
-                        <span class="choice">(a) present</span><br>
-                    </label>
+                <div class="quiz_try">
+                    <div class="quiz_selects">
+                        <form name="select">
+                            <label for="select1">
+                                <input type="radio" id="select1" name="userAns" value="v1" >
+                                <span class="choice">(a) present</span><br>
+                            </label>
+    
+                            <label for="select2">
+                                <input type="radio" id="select2" name="userAns" value="v2" >
+                                <span class="choice">(b) presentation</span><br>
+                            </label>
+    
+                            <label for="select3">
+                                <input type="radio" id="select3" name="userAns" value="v3" >
+                                <span class="choice">(c) presents</span><br>
+                            </label>
+    
+                            <label for="select4">
+                                <input type="radio" id="select4" name="userAns" value="v4" >
+                                <span class="choice">(d) present</span><br>
+                            
+                            </label>
+                        
+                            <input type="submit" value="submit" id="ans-btn"><br>
+                            <div class="result"></div>
+                            
+                        </form>
+                    </div>
+                    
+                    <form name="control-quiz">
+                        <input type="submit" value="▷" id="next-btn">
+                        <input type="submit" value="◁" id="before-btn">
+                    </form>
 
-                    <label for="select2">
-                        <input type="radio" id="select2" name="userAns" value="v2" >
-                        <span class="choice">(b) presentation</span><br>
-                    </label>
-
-                    <label for="select3">
-                        <input type="radio" id="select3" name="userAns" value="v3" >
-                        <span class="choice">(c) presents</span><br>
-                    </label>
-
-                    <label for="select4">
-                        <input type="radio" id="select4" name="userAns" value="v4" >
-                        <span class="choice">(d) present</span><br>
-                    </label>
-                
-                    <input type="submit" value="submit" id="ans-btn"><br>
-                </form>
-                
-                
-                <form name="control-quiz">
-                    <input type="submit" value="▷" id="next-btn">
-                    <input type="submit" value="◁" id="before-btn">
-                </form>
+                </div>
             </div>
 
         </div>
