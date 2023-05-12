@@ -36,7 +36,7 @@ h3 {
     margin-top: 60px;
     margin-bottom: 60px;
     padding: 8px;
-    border-style:solid;
+    border-style:ridge;
     border-color: #17190c;
 }
 
@@ -130,19 +130,23 @@ h3 {
  /* study */
  .content {
     font-size: 18px;
-    width: 70%;
-    max-width: 900px;
+    width: 80%;
+    max-width: 1000px;
     margin: 50px auto;
-}
+ }
 
 .chatGPT {
     background-color: #abcfb8;
     border-radius: 25px;
     width: 100%;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    border: 8px ridge #cacaca;
 }
+
 
 .user {
     background-color: #bdb7de;
@@ -153,7 +157,9 @@ h3 {
     overflow: hidden;
     margin-top: 50px;
     margin-bottom: 50px;
+    border: 8px ridge #cacaca;
 }
+
 
 #chatGPTimg {
     float: left;
@@ -174,7 +180,7 @@ h3 {
     border-radius: 25px;
 }
 
-.ans-btn {
+#ans-btn {
     font-size: 14px;
     background-color: #131010;
     color: white;
@@ -193,6 +199,49 @@ h3 {
 .right { 
     text-align : right; 
 }
+
+
+#next-btn {
+    font-size: 14px;
+    background-color: #abcfb8;
+    color: white;
+    width: 40px;
+    padding: 3px;
+    border: 5px double #1b592b;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#before-btn {
+    font-size: 14px;
+    background-color: #abcfb8;
+    color: white;
+    width: 40px;
+    padding: 3px;
+    border: 5px double #1b592b;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.content .chatGPT #ans-btn:hover {
+    background-color: #131010;
+    border: 5px double #1b592b;
+}
+
+.content .chatGPT #next-btn:hover {
+    background-color: #0c7439;
+}
+
+.content .chatGPT #before-btn:hover {
+    background-color: #0c7439;
+}
+
 
 
 /* mypage */
@@ -239,6 +288,8 @@ h3 {
 
 
 
+/* rank */
+
 .rank {
     background-color: #9dc8e3;
     width: 700px;
@@ -265,3 +316,70 @@ h3 {
     margin-bottom: 15px;
     border-bottom: 2px solid rgb(48, 80, 139);
 }
+
+
+
+/*main*/
+.menugo-container {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menugo {
+    background-color: rgb(103, 97, 86);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menugo img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.menugo .menuex {
+    background-color: rgb(85, 84, 81);
+    text-align: center;
+    border: 6px ridge #cacaca;
+    padding: 13px 20px;
+    box-sizing: border-box;
+}
+
+
+.menugo h3 {
+    color: #000000;
+    font-size: 32px;
+    
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.menugo p {
+    color: #ffffff;
+    font-size: 16px;
+   
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.menugo a {
+    color: #0000ee;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.menugo-container .menugo .menuex:hover {
+    background-color: #98a062;
+}
+
+
