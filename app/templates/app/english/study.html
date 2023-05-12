@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnglishStudy</title>
     <link rel="stylesheet" href="../../../static/app/css/styles.css">
+    <script src="studyscript.js"></script>
+
 </head>
 <body>
     <h1>Title</h1>
@@ -13,10 +15,59 @@
 
     <div id="menu">
         <a href="../login/">Login</a>
+        <a href="../main/">Main</a>
         <a href="#"><b>Study</b></a>
         <a href="../rank/">Rank</a>
         <a href="../mypage/">Mypage</a>
     </div>
+
+    <div class="content">
+        <div class="chatGPT">
+            <img src="../../../static/app/images/chatGPT.jpg" width="180" id="chatGPTimg">
+
+            <p id="quiz"> Henry will make a _______ on the new manufacturing process </p>
+
+            <form name="select">
+                <label for="select1">
+                    <input type="radio" id="select1" name="userAns" value="v1" >(a) present<br>
+                </label>
+
+                <label for="select2">
+                    <input type="radio" id="select2" name="userAns" value="v2" >(b) presentation<br>
+                </label>
+
+                <label for="select3">
+                    <input type="radio" id="select3" name="userAns" value="v3" >(c) presents<br>
+                </label>
+
+                <label for="select4">
+                    <input type="radio" id="select4" name="userAns" value="v4" >(d) present<br>
+                </label>
+             
+                <input type="submit" value="submit" id="ans-btn"><br>
+            </form>
+            
+            
+            <form name="control-quiz">
+                <input type="submit" value="▷" id="next-btn">
+                <input type="submit" value="◁" id="before-btn">
+            </form>
+        
+
+        </div>
+
+        <div class="user">
+            <img src="../../../static/app/images/user.jpg" width="180" id="userimg">
+
+            <div class="right">
+                <p id="change">(b) presentation</p> 
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <script src="studyscript.js"></script>
     
     
 
