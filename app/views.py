@@ -74,6 +74,7 @@ def register(request):
         print(request.POST['password'])
 
         res_data = {}
+        
         if not (username and password and re_password) :
             res_data['error'] = '전부 입력해야 합니다'
             print("error1")
@@ -81,9 +82,16 @@ def register(request):
             res_data['error'] = '비밀번호가 다릅니다'
             print("error2")
         else :
-            user = appUser(userid=username, password=make_password(password))
-            user.save()
-        return render(request, 'app/english/login.html', res_data)
+            print("error999")
+            entry = appUser.objects.filter(userid=username)
+            if entry.exists():
+                res_data['error'] = '아이디 중복'
+                print("errorwndqhr")
+                return render(request, 'app/english/join.html', res_data)
+            else :
+                user = appUser(userid=username, password=make_password(password))
+                user.save()
+        return render(request, 'app/english/join.html', res_data)
 
         
 def login(request) :
@@ -100,14 +108,15 @@ def login(request) :
             response_data['error'] = '전부 입력해야 합니다'
             print("error1")
         else :
-            dbuser = appUser.objects.get(userid=log_username)
-
-            if check_password(log_password, dbuser.password):
-                request.session['user'] = dbuser.id
-                request.session.get_expire_at_browser_close()
-                return redirect('apps:study')
-            else :
-                response_data['error'] = '비밀번호 오류'
+            entry = appUser.objects.filter(userid=log_username)
+            if entry.exists() :
+                dbuser = appUser.objects.get(userid=log_username)
+                if check_password(log_password, dbuser.password):
+                    request.session['user'] = dbuser.id
+                    request.session.get_expire_at_browser_close()
+                    return redirect('apps:study')
+                else :
+                    response_data['error'] = '비밀번호 오류'
                 
 
         return render(request, 'app/english/login.html', response_data)
