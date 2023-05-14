@@ -26,14 +26,14 @@
             {% csrf_token %}
             <b class="name">ID</b><br>
             <input type="text" name="email" class="text-field" placeholder="id"><br>
-            <input type="submit" value="check" class="check-btn"><br>
+            <input type="submit" value="check" class="check-btn" id="idcheck"><br>
             <b class="name">Password</b><br>
             <input type="password" name="password" class="text-field" placeholder="password"><br>
-            <input type="submit" value="check" class="check-btn"><br>
-            <input type="submit" value="join" class="submit-btn">
+            <input type="submit" value="check" class="check-btn" id="passwordcheck"><br>
+            <input type="submit" value="join" class="submit-btn" id="submitclick">
         </form>
     </div> 
 
-    <script src="joinscript.js"></script>
+    <script src="../../../static/app/js/joinscript.js"></script>
 </body>
 </html>
