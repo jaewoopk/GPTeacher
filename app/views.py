@@ -86,11 +86,11 @@ def register(request):
             entry = appUser.objects.filter(userid=username)
             if entry.exists():
                 res_data['error'] = '아이디 중복'
-                print("errorwndqhr")
                 return render(request, 'app/english/join.html', res_data)
             else :
                 user = appUser(userid=username, password=make_password(password))
                 user.save()
+                return redirect('apps:main')      
         return render(request, 'app/english/join.html', res_data)
 
         
@@ -114,7 +114,7 @@ def login(request) :
                 if check_password(log_password, dbuser.password):
                     request.session['user'] = dbuser.id
                     request.session.get_expire_at_browser_close()
-                    return redirect('apps:study')
+                    return redirect('apps:main')
                 else :
                     response_data['error'] = '비밀번호 오류'
                 
@@ -125,18 +125,15 @@ def logout(request) :
     request.session.pop('user')
     return redirect('apps:login')
 
-def home(request) :
-    user_id = request.session.get('user')
-    if user_id :
-        dbuser = appUser.objects.get(pk=user_id)
-        return HttpResponse(dbuser.userid)
-    return HttpResponse('로그인 필요')
+def main(request) :
+    if request.method == 'GET' :
+        if 'user' in request.session:
+            return render(request, 'app/english/main.html')
 
 
 def study(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
-            print("aaaa")
             return render(request, 'app/english/study.html')
         else :
             datas11 = Sentencedata.objects.all().order_by('idsentencedata')[:1]
@@ -147,7 +144,6 @@ def study(request) :
 def rank(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
-            print("ank")
             return render(request, 'app/english/rank.html')
         else :
             return redirect('apps:login')
@@ -155,10 +151,8 @@ def rank(request) :
 def mypage(request) :
     if request.method == 'GET' :
         if request.session.get('user') != None :
-            print("page", request.session.get('user'))
             return render(request, 'app/english/mypage.html')
         else :
-            print("page2", request.session.get('user'))
             return redirect('apps:login')
 
 # # --> FBV : Function Based View = 함수 기반 뷰
