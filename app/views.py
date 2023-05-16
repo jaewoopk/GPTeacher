@@ -77,12 +77,9 @@ def register(request):
         
         if not (username and password and re_password) :
             res_data['error'] = '전부 입력해야 합니다'
-            print("error1")
         elif password != re_password :
             res_data['error'] = '비밀번호가 다릅니다'
-            print("error2")
         else :
-            print("error999")
             entry = appUser.objects.filter(userid=username)
             if entry.exists():
                 res_data['error'] = '아이디 중복'
@@ -90,7 +87,7 @@ def register(request):
             else :
                 user = appUser(userid=username, password=make_password(password))
                 user.save()
-                return redirect('apps:main')      
+                return redirect('apps:login')      
         return render(request, 'app/english/join.html', res_data)
 
         
