@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
 body {
     background-color: #f0e8d9;
 }
@@ -6,11 +12,16 @@ body {
 h1 {
     text-align: center;
     font-size: 64px;
-    color: #58595b;
+    letter-spacing : 20px;
+    color: #cd4759;
     margin-top: 75px;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
-}    
+    transform: translate(0.4vw, 0.3vh);
+    mix-blend-mode: darken;   
+    text-shadow: 1px 0px 0px #3e2e6a, 0px 1px 0px #130b52, 2px 1px 0px #3e2e6a, 1px 2px 0px #130b52, 3px 2px 0px #3e2e6a, 2px 3px 0px #130b52, 4px 3px 0px #3e2e6a, 3px 4px 0px #130b52, 5px 4px 0px #3e2e6a, 4px 5px 0px #130b52, 6px 5px 0px #3e2e6a, 5px 6px 0px #130b52, 7px 6px 0px #3e2e6a;
+} 
+
 
 h2 {
     text-align: center;
@@ -30,15 +41,17 @@ h3 {
 }
 
 
+
 #menu{
-    background-color:#1a3221 ;
+    position: relative;
+    background-color:#60929e ;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
     padding: 8px;
     border-style:ridge;
-    border-color: #17190c;
-}
+    border-color: #172930;
+}    
 
 #menu a{
     margin-left: 15px;
@@ -47,12 +60,17 @@ h3 {
     color: #ffffff;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+#menu a:hover{
+    width: 35px;
+    background-color:#1f455e;
+    border-radius:30px;
+    border:8px solid #1f455e;
+    transition:0.5s;
 }
+
 
 
 /* login */
@@ -130,11 +148,12 @@ h3 {
  /* study */
  .content {
     font-size: 18px;
-    width: 80%;
+    width: 60%;
     max-width: 1000px;
     margin: 50px auto;
  }
 
+ /*
 .chatGPT {
     background-color: #abcfb8;
     border-radius: 25px;
@@ -142,9 +161,98 @@ h3 {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 8px ridge #cacaca;
+}
+*/
+
+.chatGPT {
+    background-color: #abcfb8;
+    border-radius: 25px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+   
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+}
+
+.chatGPT .effectGPT:nth-child(1){  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    animation: animate1 6s linear infinite;
+    
+}
+
+@keyframes animate1 {
+    0%{
+      transform: translateX(-100%);
+    }
+    100%{
+      transform: translateX(100%);
+    }
+}
+
+.chatGPT .effectGPT:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom,  #a8edea, #fed6e3);
+    animation: animate2 6s linear infinite;
+}
+
+@keyframes animate2 {
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(100%);
+    }
+}
+
+.chatGPT .effectGPT:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left,  #a8edea, #fed6e3);
+    animation: animate3 6s linear infinite;
+}
+
+@keyframes animate3 {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+}
+
+.chatGPT .effectGPT:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, #a8edea, #fed6e3);
+    animation: animate4 6s linear infinite;
+}
+
+@keyframes animate4 {
+    0%{
+      transform: translateY(100%);
+    }
+    100%{
+      transform: translateY(-100%);
+    }
 }
 
 
@@ -155,9 +263,10 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 8px ridge #cacaca;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 8px solid #cacaca;
+    position: relative;
 }
 
 
@@ -165,9 +274,10 @@ h3 {
     float: left;
     margin-left: 25px;
     margin-right: 25px;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-bottom: 15px;
     border-radius: 25px;
+    
 }
   
 
@@ -182,23 +292,73 @@ h3 {
 
 #ans-btn {
     font-size: 14px;
-    background-color: #131010;
-    color: white;
+    background-color:  #f8b74e;
+    color: rgb(255, 255, 255);
     width: 10%;
     padding: 3px;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 8px;
     float: left;
 }
 
 
-/* text align*/
-.right { 
-    text-align : right; 
+.quiz_question {
+    margin-top: 10px;
+    padding: 15px;
+    line-height: 1.4;
 }
+
+.quiz_question .ask {
+    display: inline;
+}
+
+
+.quiz_selects label{
+    display: flex;
+}
+
+.quiz_selects label input {
+    position: absolute;
+    left: -9999px;
+}
+
+.quiz_selects label span {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quiz_selects label span::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    box-shadow: inset 0px 0px 0px 4px #f8b74e;
+    flex-shrink: 0;
+    transition: all 0.65s ease-in-out;
+    
+}
+
+.quiz_selects label input:checked + span {
+    background-color: #fad69d98;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.quiz_selects label input:checked + span::before {
+    box-shadow: inset 0px 0px 0px 10px #f8b74e;
+} 
+
 
 
 #next-btn {
@@ -230,7 +390,7 @@ h3 {
 }
 
 .content .chatGPT #ans-btn:hover {
-    background-color: #131010;
+    background-color:  #f8b74e;
     border: 5px double #1b592b;
 }
 
@@ -245,11 +405,68 @@ h3 {
 
 
 /* mypage */
+
+#mypageJust {
+    height: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+#mypageJust span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .6s ease infinite alternate;
+    font-family: 'Titan One', cursive;
+    font-size: 50px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .4);
+}
+
+#mypageJust span:nth-child(2) { animation-delay: .1s; }
+#mypageJust span:nth-child(3) { animation-delay: .2s; }
+#mypageJust span:nth-child(4) { animation-delay: .3s; }
+#mypageJust span:nth-child(5) { animation-delay: .4s; }
+#mypageJust span:nth-child(6) { animation-delay: .5s; }
+#mypageJust span:nth-child(7) { animation-delay: .6s; }
+#mypageJust span:nth-child(8) { animation-delay: .7s; }
+#mypageJust span:nth-child(9) { animation-delay: .8s; }
+#mypageJust span:nth-child(10) { animation-delay: .9s; }
+#mypageJust span:nth-child(11) { animation-delay: .10s; }
+
+@keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 9px 0 #CCC,
+                   0 50px 25px rgba(0, 0, 0, .2);
+    }
+}
+  
+
 .mypageUSer {
-    background-color: #525252;
-    width: 300px;
+    background-color: #ce7979;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
+    border: 15px ridge #ffffff;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 50px;
@@ -266,16 +483,11 @@ h3 {
     text-align: center;
 }
 
-.mypageUSer h3 {
-    color: #ffffff;
-    font-size: 32px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
 
 .mypageUSer p {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: fantasy;
     margin-top: 0;
     margin-bottom: 16px;
 }
@@ -316,6 +528,7 @@ h3 {
     margin-bottom: 15px;
     border-bottom: 2px solid rgb(48, 80, 139);
 }
+
 
 
 
