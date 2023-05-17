@@ -1,0 +1,2162 @@
+[
+ {
+   "idsentenceData": 1,
+   "sentenceData_contents": " My boss is very ___________ and often changes his mind about projects",
+   "sentenceData_word1": "punctual",
+   "sentenceData_word2": "decisive",
+   "sentenceData_word3": "diligent",
+   "sentenceData_word4": "persuasive",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 2,
+   "sentenceData_contents": " The company is looking for a candidate with ____________ communication skills",
+   "sentenceData_word1": "passive",
+   "sentenceData_word2": "mediocre",
+   "sentenceData_word3": "proficient",
+   "sentenceData_word4": "negligent",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 3,
+   "sentenceData_contents": " The _____________ of the new product was wellreceived; and sales have been strong",
+   "sentenceData_word1": "prototype",
+   "sentenceData_word2": "rebate",
+   "sentenceData_word3": "margin",
+   "sentenceData_word4": "warranty",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 4,
+   "sentenceData_contents": " We need to ___________ our budget if we want to stay within our financial limits",
+   "sentenceData_word1": "exceed",
+   "sentenceData_word2": "enhance",
+   "sentenceData_word3": "revise",
+   "sentenceData_word4": "simplify",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 5,
+   "sentenceData_contents": " The ____________ identified a problem with the software and recommended a solution",
+   "sentenceData_word1": "consultant",
+   "sentenceData_word2": "intern",
+   "sentenceData_word3": "stakeholder",
+   "sentenceData_word4": "vendor",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 6,
+   "sentenceData_contents": " The photo ____________ hung the pictures in the correct spots; ensuring they were level and spaced well",
+   "sentenceData_word1": "curator",
+   "sentenceData_word2": "hiker",
+   "sentenceData_word3": "installer",
+   "sentenceData_word4": "liaison",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 7,
+   "sentenceData_contents": " The team had to ____________ their presentation when the projector malfunctioned",
+   "sentenceData_word1": "conclude",
+   "sentenceData_word2": "defer",
+   "sentenceData_word3": "revise",
+   "sentenceData_word4": "terminate",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 8,
+   "sentenceData_contents": " The company is offering a ____________ for customers who purchase the product before the end of the month",
+   "sentenceData_word1": "bonus",
+   "sentenceData_word2": "discount",
+   "sentenceData_word3": "credit",
+   "sentenceData_word4": "surcharge",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 9,
+   "sentenceData_contents": " The ____________ department is responsible for ensuring the company is complying with all regulations",
+   "sentenceData_word1": "finance",
+   "sentenceData_word2": "human",
+   "sentenceData_word3": "legal",
+   "sentenceData_word4": "marketing",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 10,
+   "sentenceData_contents": " The new employee was ___________ and made a great impression on the team",
+   "sentenceData_word1": "arrogant",
+   "sentenceData_word2": "collaborative",
+   "sentenceData_word3": "inept",
+   "sentenceData_word4": "pessimistic",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 11,
+   "sentenceData_contents": " In order to ________ a project successfully; you need to plan ahead ",
+   "sentenceData_word1": "delegate",
+   "sentenceData_word2": "initiate",
+   "sentenceData_word3": "disband",
+   "sentenceData_word4": "illustrate",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 12,
+   "sentenceData_contents": " The ________ of a company is responsible for ensuring that employees receive their salaries on time ",
+   "sentenceData_word1": "CEO",
+   "sentenceData_word2": "HR",
+   "sentenceData_word3": "IT",
+   "sentenceData_word4": "SWOT",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 13,
+   "sentenceData_contents": " The meeting was postponed until ________ notice due to the sudden illness of the CEO ",
+   "sentenceData_word1": "further",
+   "sentenceData_word2": "former",
+   "sentenceData_word3": "formal",
+   "sentenceData_word4": "formidable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 14,
+   "sentenceData_contents": " The company expects its employees to ________ a professional appearance at all times ",
+   "sentenceData_word1": "negate",
+   "sentenceData_word2": "mandate",
+   "sentenceData_word3": "elate",
+   "sentenceData_word4": "terminate",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 15,
+   "sentenceData_contents": " In order to avoid traffic ________; many companies offer their employees flexible work hours ",
+   "sentenceData_word1": "jam",
+   "sentenceData_word2": "lame",
+   "sentenceData_word3": "name",
+   "sentenceData_word4": "tame",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 16,
+   "sentenceData_contents": " The company��s ________ effectiveness is evident from its impressive growth in the past year ",
+   "sentenceData_word1": "financial",
+   "sentenceData_word2": "chronological",
+   "sentenceData_word3": "interpersonal",
+   "sentenceData_word4": "elemental",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 17,
+   "sentenceData_contents": " The new software has greatly ________ the productivity of the employees ",
+   "sentenceData_word1": "hindered",
+   "sentenceData_word2": "heightened",
+   "sentenceData_word3": "enlarged",
+   "sentenceData_word4": "enlightened",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 18,
+   "sentenceData_contents": " The manager advised the employees to ________ their tasks in order to ensure efficiency ",
+   "sentenceData_word1": "diversify",
+   "sentenceData_word2": "clarify",
+   "sentenceData_word3": "intensify",
+   "sentenceData_word4": "simplify",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 19,
+   "sentenceData_contents": " The company offered ________ compensation to its employees as an incentive to work harder ",
+   "sentenceData_word1": "influential",
+   "sentenceData_word2": "substantial",
+   "sentenceData_word3": "radical",
+   "sentenceData_word4": "manual",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 20,
+   "sentenceData_contents": " The CEO��s ________ nature often led to disagreements with his colleagues ",
+   "sentenceData_word1": "affable",
+   "sentenceData_word2": "adamant",
+   "sentenceData_word3": "apathetic",
+   "sentenceData_word4": "apprehensive",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 21,
+   "sentenceData_contents": " I need to _______ this report before the meeting tomorrow",
+   "sentenceData_word1": "submit",
+   "sentenceData_word2": "revise",
+   "sentenceData_word3": "decorate",
+   "sentenceData_word4": "ignore",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 22,
+   "sentenceData_contents": " The new employee was _______ with his work during the first week",
+   "sentenceData_word1": "diligent",
+   "sentenceData_word2": "infamous",
+   "sentenceData_word3": "careless",
+   "sentenceData_word4": "messy",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 23,
+   "sentenceData_contents": " Our company seeks to _______ a high level of customer satisfaction",
+   "sentenceData_word1": "decrease",
+   "sentenceData_word2": "substitute",
+   "sentenceData_word3": "maintain",
+   "sentenceData_word4": "ignore",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 24,
+   "sentenceData_contents": " The _______ of the meeting was to discuss the new project proposal",
+   "sentenceData_word1": "agenda",
+   "sentenceData_word2": "furniture",
+   "sentenceData_word3": "coffee",
+   "sentenceData_word4": "cocktail",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 25,
+   "sentenceData_contents": " The _______ of the marketing campaign was to increase brand awareness",
+   "sentenceData_word1": "goal",
+   "sentenceData_word2": "obstacle",
+   "sentenceData_word3": "merit",
+   "sentenceData_word4": "distraction",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 26,
+   "sentenceData_contents": " Her presentation was very _______ and helped the audience understand the topic",
+   "sentenceData_word1": "confusing",
+   "sentenceData_word2": "engaging",
+   "sentenceData_word3": "cold",
+   "sentenceData_word4": "dishonest",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 27,
+   "sentenceData_contents": " The company _______ a large profit last quarter",
+   "sentenceData_word1": "lost",
+   "sentenceData_word2": "gained",
+   "sentenceData_word3": "declined",
+   "sentenceData_word4": "stagnated",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 28,
+   "sentenceData_contents": " The manager _______ each team member's strengths and weaknesses to create a balanced project team",
+   "sentenceData_word1": "ignored",
+   "sentenceData_word2": "exploited",
+   "sentenceData_word3": "assessed",
+   "sentenceData_word4": "separated",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 29,
+   "sentenceData_contents": " The employees were given a _______ bonus for their hard work during the busy season",
+   "sentenceData_word1": "deserved",
+   "sentenceData_word2": "strange",
+   "sentenceData_word3": "irrelevant",
+   "sentenceData_word4": "illegal",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 30,
+   "sentenceData_contents": " The company's _______ to ethical standards is an important factor in their success",
+   "sentenceData_word1": "adherence",
+   "sentenceData_word2": "rejection",
+   "sentenceData_word3": "sabotage",
+   "sentenceData_word4": "manipulation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 31,
+   "sentenceData_contents": "He was walking _______ the street when he saw the accident",
+   "sentenceData_word1": "under",
+   "sentenceData_word2": "alongside",
+   "sentenceData_word3": "across",
+   "sentenceData_word4": "inside",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 32,
+   "sentenceData_contents": "We need to _______ the costs of the project before we can proceed",
+   "sentenceData_word1": "calculate",
+   "sentenceData_word2": "increase",
+   "sentenceData_word3": "exaggerate",
+   "sentenceData_word4": "ignore",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 33,
+   "sentenceData_contents": "The _______ of the new product was a long and extensive process",
+   "sentenceData_word1": "design",
+   "sentenceData_word2": "impression",
+   "sentenceData_word3": "obligation",
+   "sentenceData_word4": "reputation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 34,
+   "sentenceData_contents": "The _______ solution to this problem is to hire more staff",
+   "sentenceData_word1": "obvious",
+   "sentenceData_word2": "complicated",
+   "sentenceData_word3": "unclear",
+   "sentenceData_word4": "unlikely",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 35,
+   "sentenceData_contents": "She obtained her master's degree after several years of _______ study",
+   "sentenceData_word1": "intense",
+   "sentenceData_word2": "lazy",
+   "sentenceData_word3": "strenuous",
+   "sentenceData_word4": "easy",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 36,
+   "sentenceData_contents": "The company's profits have _______ due to the new marketing strategy",
+   "sentenceData_word1": "decreased",
+   "sentenceData_word2": "stagnated",
+   "sentenceData_word3": "remained",
+   "sentenceData_word4": "quadrupled",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 37,
+   "sentenceData_contents": "We need to _______ the location of the conference before we can make travel arrangements",
+   "sentenceData_word1": "ignore",
+   "sentenceData_word2": "decide",
+   "sentenceData_word3": "hesitate",
+   "sentenceData_word4": "disapprove",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 38,
+   "sentenceData_contents": "The report was filled with _______ errors that took hours to correct",
+   "sentenceData_word1": "typos",
+   "sentenceData_word2": "deviations",
+   "sentenceData_word3": "investments",
+   "sentenceData_word4": "celebrations",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 39,
+   "sentenceData_contents": "The company's investment in new technology will _______ its productivity and profits",
+   "sentenceData_word1": "increase",
+   "sentenceData_word2": "decrease",
+   "sentenceData_word3": "remain",
+   "sentenceData_word4": "fluctuate",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 40,
+   "sentenceData_contents": "She received many _______ from colleagues congratulating her on her promotion",
+   "sentenceData_word1": "inquiries",
+   "sentenceData_word2": "complaints",
+   "sentenceData_word3": "compliments",
+   "sentenceData_word4": "insults",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 41,
+   "sentenceData_contents": "The customer was _______ about the quality of the product she received",
+   "sentenceData_word1": "satisfied",
+   "sentenceData_word2": "delighted",
+   "sentenceData_word3": "disappointed",
+   "sentenceData_word4": "indifferent",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 42,
+   "sentenceData_contents": "The new employee was given a _______ tour of the office on his first day",
+   "sentenceData_word1": "complicated",
+   "sentenceData_word2": "brief",
+   "sentenceData_word3": "extensive",
+   "sentenceData_word4": "irrelevant",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 43,
+   "sentenceData_contents": "The company's _______ team was tasked with creating a new marketing campaign",
+   "sentenceData_word1": "finance",
+   "sentenceData_word2": "legal",
+   "sentenceData_word3": "sales",
+   "sentenceData_word4": "creative",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 44,
+   "sentenceData_contents": "The company's CEO _______ his position due to health reasons",
+   "sentenceData_word1": "quit",
+   "sentenceData_word2": "resigned",
+   "sentenceData_word3": "retired",
+   "sentenceData_word4": "sold",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 45,
+   "sentenceData_contents": "The new product was launched with an extensive _______ campaign",
+   "sentenceData_word1": "marketing",
+   "sentenceData_word2": "legal",
+   "sentenceData_word3": "finance",
+   "sentenceData_word4": "sales",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 46,
+   "sentenceData_contents": "We need to _______ the proposal before we can submit it to the board",
+   "sentenceData_word1": "revise",
+   "sentenceData_word2": "approve",
+   "sentenceData_word3": "ignore",
+   "sentenceData_word4": "hesitate",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 47,
+   "sentenceData_contents": "The company's profits have been _______ for the past year",
+   "sentenceData_word1": "decreasing",
+   "sentenceData_word2": "increasing",
+   "sentenceData_word3": "stabilizing",
+   "sentenceData_word4": "remaining",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 48,
+   "sentenceData_contents": "The new employee was given a _______ to complete before he could be hired",
+   "sentenceData_word1": "test",
+   "sentenceData_word2": "contract",
+   "sentenceData_word3": "interview",
+   "sentenceData_word4": "tournament",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 49,
+   "sentenceData_contents": "We need to _______ a strategy that will help us achieve our goals",
+   "sentenceData_word1": "ignore",
+   "sentenceData_word2": "implement",
+   "sentenceData_word3": "hesitate",
+   "sentenceData_word4": "disapprove",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 50,
+   "sentenceData_contents": "Her presentation was so _______ that many people left the room",
+   "sentenceData_word1": "interesting",
+   "sentenceData_word2": "boring",
+   "sentenceData_word3": "enjoyable",
+   "sentenceData_word4": "irrelevant",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 51,
+   "sentenceData_contents": " The company's ________ plan helped them achieve their financial goals",
+   "sentenceData_word1": "efficient",
+   "sentenceData_word2": "ecstatic",
+   "sentenceData_word3": "elusive",
+   "sentenceData_word4": "evasive",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 52,
+   "sentenceData_contents": " The team leader's ____________ attitude helped motivate the group to accomplish their tasks",
+   "sentenceData_word1": "diligent",
+   "sentenceData_word2": "dubious",
+   "sentenceData_word3": "destitute",
+   "sentenceData_word4": "disillusioned",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 53,
+   "sentenceData_contents": " The CEO's _________ guidance helped the company weather the economic downturn",
+   "sentenceData_word1": "astute",
+   "sentenceData_word2": "arbitrary",
+   "sentenceData_word3": "ambivalent",
+   "sentenceData_word4": "agitated",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 54,
+   "sentenceData_contents": " The new safety ___________ required all employees to wear helmets while on the job site",
+   "sentenceData_word1": "compliance",
+   "sentenceData_word2": "compendium",
+   "sentenceData_word3": "condemnation",
+   "sentenceData_word4": "contemplation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 55,
+   "sentenceData_contents": " The company's ___________ to resolve the customer's complaint was swift and satisfactory",
+   "sentenceData_word1": "initiative",
+   "sentenceData_word2": "intimidation",
+   "sentenceData_word3": "incoherence",
+   "sentenceData_word4": "infamy",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 56,
+   "sentenceData_contents": " The IT department upgraded the company's ___________ to enhance its capabilities",
+   "sentenceData_word1": "infrastructure",
+   "sentenceData_word2": "interjection",
+   "sentenceData_word3": "intimidation",
+   "sentenceData_word4": "intricacy",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 57,
+   "sentenceData_contents": " The marketing team's ___________ campaign helped the company expand its customer base",
+   "sentenceData_word1": "innovative",
+   "sentenceData_word2": "insidious",
+   "sentenceData_word3": "insolvent",
+   "sentenceData_word4": "insipid",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 58,
+   "sentenceData_contents": " The company's ___________ with local suppliers helped them save on production costs",
+   "sentenceData_word1": "liaison",
+   "sentenceData_word2": "liability",
+   "sentenceData_word3": "lethargy",
+   "sentenceData_word4": "licentiousness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 59,
+   "sentenceData_contents": " The HR team's ___________ screening process ensured that only qualified candidates were hired",
+   "sentenceData_word1": "meticulous",
+   "sentenceData_word2": "malevolent",
+   "sentenceData_word3": "merciful",
+   "sentenceData_word4": "negligent",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 60,
+   "sentenceData_contents": " The manager's ___________ leadership style made the staff feel valued and respected",
+   "sentenceData_word1": "nurturing",
+   "sentenceData_word2": "nihilistic",
+   "sentenceData_word3": "notorious",
+   "sentenceData_word4": "nuance",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 61,
+   "sentenceData_contents": " To keep the financial records organized; the company hired a ___________",
+   "sentenceData_word1": "bookkeeper",
+   "sentenceData_word2": "blunderer",
+   "sentenceData_word3": "belligerent",
+   "sentenceData_word4": "beguiler",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 62,
+   "sentenceData_contents": " The company had to ___________ some of its employees due to the decrease in sales",
+   "sentenceData_word1": "reiterate",
+   "sentenceData_word2": "reckon",
+   "sentenceData_word3": "terminate",
+   "sentenceData_word4": "vindicate",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 63,
+   "sentenceData_contents": " The software update will ___________ some of the program's features",
+   "sentenceData_word1": "instate",
+   "sentenceData_word2": "revoke",
+   "sentenceData_word3": "subjugate",
+   "sentenceData_word4": "implement",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 64,
+   "sentenceData_contents": " There was a minor ___________ during the presentation; but the speaker quickly regained their composure",
+   "sentenceData_word1": "malapropism",
+   "sentenceData_word2": "malefactor",
+   "sentenceData_word3": "maelstrom",
+   "sentenceData_word4": "malcontent",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 65,
+   "sentenceData_contents": " The town's new ___________ brings clean water to all its residents",
+   "sentenceData_word1": "aqueduct",
+   "sentenceData_word2": "aperture",
+   "sentenceData_word3": "accolade",
+   "sentenceData_word4": "altercation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 66,
+   "sentenceData_contents": " The CEO's ___________ decision to merge with the competing company was met with mixed reactions",
+   "sentenceData_word1": "audacious",
+   "sentenceData_word2": "austere",
+   "sentenceData_word3": "aloof",
+   "sentenceData_word4": "abject",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 67,
+   "sentenceData_contents": " The company's new ___________ allowed employees to work from home on certain days",
+   "sentenceData_word1": "bylaw",
+   "sentenceData_word2": "protocol",
+   "sentenceData_word3": "subsidy",
+   "sentenceData_word4": "initiative",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 68,
+   "sentenceData_contents": " The ___________ in the shipping industry resulted in delayed deliveries",
+   "sentenceData_word1": "arbitration",
+   "sentenceData_word2": "scarcity",
+   "sentenceData_word3": "influx",
+   "sentenceData_word4": "discrepancy",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 69,
+   "sentenceData_contents": " The company's sales ___________ grew steadily after the release of their new product",
+   "sentenceData_word1": "pittance",
+   "sentenceData_word2": "margin",
+   "sentenceData_word3": "concession",
+   "sentenceData_word4": "quota",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 70,
+   "sentenceData_contents": " The employee's ___________ towards their colleagues created a toxic work environment",
+   "sentenceData_word1": "despondency",
+   "sentenceData_word2": "indifference",
+   "sentenceData_word3": "animosity",
+   "sentenceData_word4": "elation",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 71,
+   "sentenceData_contents": " The company's __________ performance improved by % this year",
+   "sentenceData_word1": "fiscal",
+   "sentenceData_word2": "medical",
+   "sentenceData_word3": "musical",
+   "sentenceData_word4": "technological",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 72,
+   "sentenceData_contents": " The sales manager is ___________ for the overall revenue generated by the sales team",
+   "sentenceData_word1": "accountable",
+   "sentenceData_word2": "abstract",
+   "sentenceData_word3": "absurd",
+   "sentenceData_word4": "adaptable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 73,
+   "sentenceData_contents": " The HR department is responsible for ___________ new employees",
+   "sentenceData_word1": "evaluating",
+   "sentenceData_word2": "entertaining",
+   "sentenceData_word3": "experiencing",
+   "sentenceData_word4": "enriching",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 74,
+   "sentenceData_contents": " The cost of raw materials has ___________ over the last year; leading to an increase in production costs",
+   "sentenceData_word1": "dwindled",
+   "sentenceData_word2": "accelerated",
+   "sentenceData_word3": "plateaued",
+   "sentenceData_word4": "fluctuated",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 75,
+   "sentenceData_contents": " The CEO gave a ___________ speech at the company's annual meeting; inspiring employees to work harder",
+   "sentenceData_word1": "motivational",
+   "sentenceData_word2": "controversial",
+   "sentenceData_word3": "pessimistic",
+   "sentenceData_word4": "sarcastic",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 76,
+   "sentenceData_contents": " The company's new product line ___________ the competition in terms of quality and affordability",
+   "sentenceData_word1": "surpasses",
+   "sentenceData_word2": "misleads",
+   "sentenceData_word3": "undermines",
+   "sentenceData_word4": "stagnates",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 77,
+   "sentenceData_contents": " The company's IT department is responsible for ___________ the security of the company's data",
+   "sentenceData_word1": "ensuring",
+   "sentenceData_word2": "hindering",
+   "sentenceData_word3": "facilitating",
+   "sentenceData_word4": "embellishing",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 78,
+   "sentenceData_contents": " The marketing team ___________ a new advertising campaign to increase brand awareness",
+   "sentenceData_word1": "launched",
+   "sentenceData_word2": "terminated",
+   "sentenceData_word3": "obstructed",
+   "sentenceData_word4": "discouraged",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 79,
+   "sentenceData_contents": " The company's ___________ goal is to expand its operations in Asia",
+   "sentenceData_word1": "strategic",
+   "sentenceData_word2": "chaotic",
+   "sentenceData_word3": "absurd",
+   "sentenceData_word4": "unlikely",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 80,
+   "sentenceData_contents": " The company's ___________ policies ensure that employees are treated fairly and respectfully",
+   "sentenceData_word1": "ethical",
+   "sentenceData_word2": "radical",
+   "sentenceData_word3": "innovative",
+   "sentenceData_word4": "outdated",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 81,
+   "sentenceData_contents": " The students were required to __________ the instructions carefully before beginning the exam",
+   "sentenceData_word1": "anticipate",
+   "sentenceData_word2": "abide",
+   "sentenceData_word3": "abbreviate",
+   "sentenceData_word4": "absorb",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 82,
+   "sentenceData_contents": " The ___________ of the city were adorned with lights for the holiday festivities",
+   "sentenceData_word1": "boulevard",
+   "sentenceData_word2": "municipality",
+   "sentenceData_word3": "monument",
+   "sentenceData_word4": "reservoir",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 83,
+   "sentenceData_contents": " The scientist conducted _________ to gather data for his research project",
+   "sentenceData_word1": "interviews",
+   "sentenceData_word2": "experiments",
+   "sentenceData_word3": "surveys",
+   "sentenceData_word4": "demonstrations",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 84,
+   "sentenceData_contents": " The movie was rated ________ by critics due to its poor storyline and acting",
+   "sentenceData_word1": "mediocre",
+   "sentenceData_word2": "exceptional",
+   "sentenceData_word3": "auspicious",
+   "sentenceData_word4": "negligible",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 85,
+   "sentenceData_contents": " The _____________ of the incoming freshman class was determined by their grades and test scores",
+   "sentenceData_word1": "acceptance",
+   "sentenceData_word2": "concession",
+   "sentenceData_word3": "trek",
+   "sentenceData_word4": "procurement",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 86,
+   "sentenceData_contents": " The construction workers wore ___________ gear to protect themselves from hazardous materials",
+   "sentenceData_word1": "apathetic",
+   "sentenceData_word2": "resilient",
+   "sentenceData_word3": "hazardous",
+   "sentenceData_word4": "protective",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 87,
+   "sentenceData_contents": " The politician gave a __________ speech that left the audience feeling inspired",
+   "sentenceData_word1": "tedious",
+   "sentenceData_word2": "compelling",
+   "sentenceData_word3": "obsolete",
+   "sentenceData_word4": "negligible",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 88,
+   "sentenceData_contents": " The company ___________ its profits each year by investing in new technology",
+   "sentenceData_word1": "maximizes",
+   "sentenceData_word2": "depletes",
+   "sentenceData_word3": "diminishes",
+   "sentenceData_word4": "augments",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 89,
+   "sentenceData_contents": " The __________ of the novel includes a surprise ending that leaves the reader shocked",
+   "sentenceData_word1": "setting",
+   "sentenceData_word2": "climax",
+   "sentenceData_word3": "exposition",
+   "sentenceData_word4": "resolution",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 90,
+   "sentenceData_contents": " The athlete followed a rigorous ___________ to prepare for the upcoming competition",
+   "sentenceData_word1": "routine",
+   "sentenceData_word2": "hierarchy",
+   "sentenceData_word3": "expedition",
+   "sentenceData_word4": "hiatus",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 91,
+   "sentenceData_contents": " The ____ of the scientific data was unclear; leaving the researchers perplexed",
+   "sentenceData_word1": "conclusion",
+   "sentenceData_word2": "methodology",
+   "sentenceData_word3": "hypothesis",
+   "sentenceData_word4": "analysis",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 92,
+   "sentenceData_contents": " The ____ of the forest was so thick that not even the sun's rays could penetrate",
+   "sentenceData_word1": "underbrush",
+   "sentenceData_word2": "canopy",
+   "sentenceData_word3": "foliage",
+   "sentenceData_word4": "meadow",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 93,
+   "sentenceData_contents": " The politician's ____ views on immigration caused controversy among his constituents",
+   "sentenceData_word1": "liberal",
+   "sentenceData_word2": "conservative",
+   "sentenceData_word3": "moderate",
+   "sentenceData_word4": "radical",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 94,
+   "sentenceData_contents": " The actress received ____ for her outstanding performance in the Broadway show",
+   "sentenceData_word1": "praise",
+   "sentenceData_word2": "criticism",
+   "sentenceData_word3": "competition",
+   "sentenceData_word4": "motivation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 95,
+   "sentenceData_contents": " The ____ of the skyscraper was breathtaking; standing tall against the city skyline",
+   "sentenceData_word1": "magnitude",
+   "sentenceData_word2": "altitude",
+   "sentenceData_word3": "architecture",
+   "sentenceData_word4": "construction",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 96,
+   "sentenceData_contents": " The ____ child refused to share his toys with his cousins",
+   "sentenceData_word1": "obedient",
+   "sentenceData_word2": "generous",
+   "sentenceData_word3": "spoiled",
+   "sentenceData_word4": "considerate",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 97,
+   "sentenceData_contents": " The ____ businessman was willing to take risks to expand his company",
+   "sentenceData_word1": "cautious",
+   "sentenceData_word2": "prudent",
+   "sentenceData_word3": "ambitious",
+   "sentenceData_word4": "reluctant",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 98,
+   "sentenceData_contents": " The ____ athlete was disqualified for using performanceenhancing drugs",
+   "sentenceData_word1": "ethical",
+   "sentenceData_word2": "lawful",
+   "sentenceData_word3": "cheating",
+   "sentenceData_word4": "fair",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 99,
+   "sentenceData_contents": " The ____ of the painting was remarkable; capturing every detail with precision",
+   "sentenceData_word1": "clarity",
+   "sentenceData_word2": "confusion",
+   "sentenceData_word3": "ambiguity",
+   "sentenceData_word4": "vagueness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 100,
+   "sentenceData_contents": " The ____ landscape of the desert was both beautiful and harsh",
+   "sentenceData_word1": "barren",
+   "sentenceData_word2": "lush",
+   "sentenceData_word3": "fruitful",
+   "sentenceData_word4": "fertile",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 101,
+   "sentenceData_contents": " The ____________ of the city center was breathtaking",
+   "sentenceData_word1": "hub",
+   "sentenceData_word2": "perimeter",
+   "sentenceData_word3": "kinship",
+   "sentenceData_word4": "epitome",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 102,
+   "sentenceData_contents": " Despite its ____________ name; the movie was actually very humorous",
+   "sentenceData_word1": "menacing",
+   "sentenceData_word2": "formidable",
+   "sentenceData_word3": "propitious",
+   "sentenceData_word4": "slanderous",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 103,
+   "sentenceData_contents": " The ____________ of the public sector has been a topic of debate for many years",
+   "sentenceData_word1": "efficacy",
+   "sentenceData_word2": "transgression",
+   "sentenceData_word3": "complacence",
+   "sentenceData_word4": "antithesis",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 104,
+   "sentenceData_contents": " Many people consider ____________ and kindness to be synonymous",
+   "sentenceData_word1": "benevolence",
+   "sentenceData_word2": "solipsism",
+   "sentenceData_word3": "veneration",
+   "sentenceData_word4": "nepotism",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 105,
+   "sentenceData_contents": " The politician's ____________ and smooth talking convinced many people to vote for him",
+   "sentenceData_word1": "eloquence",
+   "sentenceData_word2": "insipidness",
+   "sentenceData_word3": "effervescence",
+   "sentenceData_word4": "aberration",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 106,
+   "sentenceData_contents": " The ____________ of the novel was so vivid that readers felt as if they were part of the story",
+   "sentenceData_word1": "introspection",
+   "sentenceData_word2": "ingenuity",
+   "sentenceData_word3": "alliteration",
+   "sentenceData_word4": "imagery",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 107,
+   "sentenceData_contents": " The company's ____________ plan was a success and resulted in increased profits",
+   "sentenceData_word1": "ingenuous",
+   "sentenceData_word2": "clandestine",
+   "sentenceData_word3": "convoluted",
+   "sentenceData_word4": "streamlined",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 108,
+   "sentenceData_contents": " The ____________ air in the mountains was refreshing after the smoggy city",
+   "sentenceData_word1": "brackish",
+   "sentenceData_word2": "pristine",
+   "sentenceData_word3": "noxious",
+   "sentenceData_word4": "atavistic",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 109,
+   "sentenceData_contents": " The ____________ of the college campus made it easy for new students to find their way around",
+   "sentenceData_word1": "ergonomics",
+   "sentenceData_word2": "enigma",
+   "sentenceData_word3": "layout",
+   "sentenceData_word4": "stigmatization",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 110,
+   "sentenceData_contents": " The ____________ of the athlete impressed everyone at the Olympic games",
+   "sentenceData_word1": "tenacity",
+   "sentenceData_word2": "enervation",
+   "sentenceData_word3": "platitude",
+   "sentenceData_word4": "invective",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 111,
+   "sentenceData_contents": " The artist's ____________ was evident in the intricate details of her paintings",
+   "sentenceData_word1": "intricacy",
+   "sentenceData_word2": "euphony",
+   "sentenceData_word3": "acuity",
+   "sentenceData_word4": "heinousness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 112,
+   "sentenceData_contents": " The ____________ of the party was so strong that no one wanted to leave",
+   "sentenceData_word1": "opulence",
+   "sentenceData_word2": "camaraderie",
+   "sentenceData_word3": "enmity",
+   "sentenceData_word4": "truculence",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 113,
+   "sentenceData_contents": " The criminal's ____________ was so convincing that even the judge believed him",
+   "sentenceData_word1": "alacrity",
+   "sentenceData_word2": "guile",
+   "sentenceData_word3": "ephemerality",
+   "sentenceData_word4": "corollary",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 114,
+   "sentenceData_contents": " The writer's ____________ style made her books very popular among young adults",
+   "sentenceData_word1": "vernacular",
+   "sentenceData_word2": "propensity",
+   "sentenceData_word3": "fealty",
+   "sentenceData_word4": "amalgamation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 115,
+   "sentenceData_contents": " The football coach's ____________ was motivational and inspired his team to victory",
+   "sentenceData_word1": "solicitousness",
+   "sentenceData_word2": "veracity",
+   "sentenceData_word3": "fortitude",
+   "sentenceData_word4": "jocularly",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 116,
+   "sentenceData_contents": " The ____________ role in the project was crucial to its success",
+   "sentenceData_word1": "ubiquity",
+   "sentenceData_word2": "frivolity",
+   "sentenceData_word3": "efficacy",
+   "sentenceData_word4": "iniquity",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 117,
+   "sentenceData_contents": " The ____________ aroma of the freshly baked croissants was enticing",
+   "sentenceData_word1": "pungent",
+   "sentenceData_word2": "redolent",
+   "sentenceData_word3": "soporific",
+   "sentenceData_word4": "acrid",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 118,
+   "sentenceData_contents": " The ____________ of the novel was complex and required close attention from the reader",
+   "sentenceData_word1": "fabric",
+   "sentenceData_word2": "gesticulation",
+   "sentenceData_word3": "profundity",
+   "sentenceData_word4": "aberration",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 119,
+   "sentenceData_contents": " The ____________ of the professor was contagious and made his students eager to learn",
+   "sentenceData_word1": "magnanimity",
+   "sentenceData_word2": "petulance",
+   "sentenceData_word3": "avarice",
+   "sentenceData_word4": "truculence",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 120,
+   "sentenceData_contents": " The ____________ of the gymnast was impressive as she effortlessly performed her routine",
+   "sentenceData_word1": "agility",
+   "sentenceData_word2": "diffidence",
+   "sentenceData_word3": "belligerence",
+   "sentenceData_word4": "malfeasance",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 121,
+   "sentenceData_contents": "The ____________ of the fireworks display was aweinspiring",
+   "sentenceData_word1": "ostentation",
+   "sentenceData_word2": "gravity",
+   "sentenceData_word3": "cacophony",
+   "sentenceData_word4": "spectacle",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 122,
+   "sentenceData_contents": "The politician's ____________ speech swayed many undecided voters",
+   "sentenceData_word1": "florid",
+   "sentenceData_word2": "laconic",
+   "sentenceData_word3": "doleful",
+   "sentenceData_word4": "mellifluous",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 123,
+   "sentenceData_contents": "The ____________ of the restaurant was bright and inviting",
+   "sentenceData_word1": "decorum",
+   "sentenceData_word2": "ambiance",
+   "sentenceData_word3": "vestige",
+   "sentenceData_word4": "rectitude",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 124,
+   "sentenceData_contents": "The ____________ in the stock market caused many investors to panic",
+   "sentenceData_word1": "volatility",
+   "sentenceData_word2": "frivolity",
+   "sentenceData_word3": "inundation",
+   "sentenceData_word4": "transgression",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 125,
+   "sentenceData_contents": "The ____________ tree in the garden provided ample shade on hot summer days",
+   "sentenceData_word1": "verdant",
+   "sentenceData_word2": "grandiose",
+   "sentenceData_word3": "impertinent",
+   "sentenceData_word4": "benevolent",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 126,
+   "sentenceData_contents": " The ____________ of the novel made it difficult to follow the story",
+   "sentenceData_word1": "syntax",
+   "sentenceData_word2": "plot",
+   "sentenceData_word3": "syntaxe",
+   "sentenceData_word4": "ploy",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 127,
+   "sentenceData_contents": " The new employee was ____________ to learn all the company policies",
+   "sentenceData_word1": "capable",
+   "sentenceData_word2": "incapability",
+   "sentenceData_word3": "capableness",
+   "sentenceData_word4": "incapably",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 128,
+   "sentenceData_contents": " The CEO's ____________ speech motivated employees to work harder",
+   "sentenceData_word1": "inspirar",
+   "sentenceData_word2": "inspiture",
+   "sentenceData_word3": "inspiration",
+   "sentenceData_word4": "inspiratory",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 129,
+   "sentenceData_contents": " The scientist ____________ his theory with extensive research",
+   "sentenceData_word1": "verified",
+   "sentenceData_word2": "verifiernce",
+   "sentenceData_word3": "verifierly",
+   "sentenceData_word4": "verifiably",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 130,
+   "sentenceData_contents": " The athlete was ____________ after winning the marathon",
+   "sentenceData_word1": "celebrated",
+   "sentenceData_word2": "celebrational",
+   "sentenceData_word3": "celebratingly",
+   "sentenceData_word4": "celebrative",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 131,
+   "sentenceData_contents": " The professor's ____________ knowledge of the subject impressed the students",
+   "sentenceData_word1": "expertise",
+   "sentenceData_word2": "expertizing",
+   "sentenceData_word3": "expertization",
+   "sentenceData_word4": "expertively",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 132,
+   "sentenceData_contents": " The artist's ____________ paintings were a huge success",
+   "sentenceData_word1": "aesthetic",
+   "sentenceData_word2": "aesthetical",
+   "sentenceData_word3": "aesthetician",
+   "sentenceData_word4": "aesthetically",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 133,
+   "sentenceData_contents": " The company's new policy was ____________ to all employees",
+   "sentenceData_word1": "communicably",
+   "sentenceData_word2": "communicative",
+   "sentenceData_word3": "communicativeness",
+   "sentenceData_word4": "communicator",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 134,
+   "sentenceData_contents": " The politician's ____________ promises were not kept",
+   "sentenceData_word1": "grand",
+   "sentenceData_word2": "grandiosity",
+   "sentenceData_word3": "grandly",
+   "sentenceData_word4": "grandiloquent",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 135,
+   "sentenceData_contents": " The athlete's ____________ determination helped her win the race",
+   "sentenceData_word1": "doggedness",
+   "sentenceData_word2": "dogginess",
+   "sentenceData_word3": "doggedly",
+   "sentenceData_word4": "dogging",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 136,
+   "sentenceData_contents": "The _______________ of the sun was blinding",
+   "sentenceData_word1": "Radiance",
+   "sentenceData_word2": "Radiate",
+   "sentenceData_word3": "Radiator",
+   "sentenceData_word4": "Radiogram",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 137,
+   "sentenceData_contents": "The _______________ speaker was hard to understand",
+   "sentenceData_word1": "Inarticulate",
+   "sentenceData_word2": "Articulate",
+   "sentenceData_word3": "Articulation",
+   "sentenceData_word4": "Articulated",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 138,
+   "sentenceData_contents": "The new medication had unexpected _______________ effects",
+   "sentenceData_word1": "Side",
+   "sentenceData_word2": "Sider",
+   "sentenceData_word3": "Sidereal",
+   "sentenceData_word4": "Sideshow",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 139,
+   "sentenceData_contents": "The lawyer's argument was _______________",
+   "sentenceData_word1": "Persuasible",
+   "sentenceData_word2": "Persuasive",
+   "sentenceData_word3": "Persuasion",
+   "sentenceData_word4": "Persuasively",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 140,
+   "sentenceData_contents": "The _______________ of the small village was very peaceful",
+   "sentenceData_word1": "Tranquility",
+   "sentenceData_word2": "Tranquilize",
+   "sentenceData_word3": "Tranquillizer",
+   "sentenceData_word4": "Tranquil",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 141,
+   "sentenceData_contents": "The _______________ fire created a lot of damage",
+   "sentenceData_word1": "Ferocious",
+   "sentenceData_word2": "Fertile",
+   "sentenceData_word3": "Ferocity",
+   "sentenceData_word4": "Fertilize",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 142,
+   "sentenceData_contents": "The author's _______________ description painted a vivid picture in my mind",
+   "sentenceData_word1": "Descriptive",
+   "sentenceData_word2": "Describe",
+   "sentenceData_word3": "Description",
+   "sentenceData_word4": "Descriptively",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 143,
+   "sentenceData_contents": "The company's _______________ move resulted in a huge profit",
+   "sentenceData_word1": "Strategic",
+   "sentenceData_word2": "Strategy",
+   "sentenceData_word3": "Strategist",
+   "sentenceData_word4": "Strategize",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 144,
+   "sentenceData_contents": "The _______________ of the storm was felt for days",
+   "sentenceData_word1": "Aftermath",
+   "sentenceData_word2": "Afterward",
+   "sentenceData_word3": "Afterlife",
+   "sentenceData_word4": "Afterthought",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 145,
+   "sentenceData_contents": "The _______________ child was fully immersed in the story",
+   "sentenceData_word1": "Enthused",
+   "sentenceData_word2": "Enthusiastic",
+   "sentenceData_word3": "Enthusiasm",
+   "sentenceData_word4": "Enthusiastically",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 146,
+   "sentenceData_contents": "The _______________ of the university was impressed by the student's achievements",
+   "sentenceData_word1": "Administrator",
+   "sentenceData_word2": "Administrate",
+   "sentenceData_word3": "Administrative",
+   "sentenceData_word4": "Administration",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 147,
+   "sentenceData_contents": "The athletes worked _______________ to prepare for the competition",
+   "sentenceData_word1": "Vigorous",
+   "sentenceData_word2": "Vigorously",
+   "sentenceData_word3": "Vigor",
+   "sentenceData_word4": "Invigorate",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 148,
+   "sentenceData_contents": "The museum had a fascinating collection of _______________ artifacts",
+   "sentenceData_word1": "Archeological",
+   "sentenceData_word2": "Archaeologist",
+   "sentenceData_word3": "Archeology",
+   "sentenceData_word4": "Archaeological",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 149,
+   "sentenceData_contents": "The chef's _______________ menu included a variety of exotic foods",
+   "sentenceData_word1": "Eclectic",
+   "sentenceData_word2": "Eclecticism",
+   "sentenceData_word3": "Eclecticize",
+   "sentenceData_word4": "Eclectically",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 150,
+   "sentenceData_contents": "The children's _______________ laughter could be heard throughout the park",
+   "sentenceData_word1": "Infectious",
+   "sentenceData_word2": "Infection",
+   "sentenceData_word3": "Infect",
+   "sentenceData_word4": "Infectiously",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 151,
+   "sentenceData_contents": "The novelist's _______________ writing style made her books popular with readers",
+   "sentenceData_word1": "Narrative",
+   "sentenceData_word2": "Narrator",
+   "sentenceData_word3": "Narrate",
+   "sentenceData_word4": "Narration",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 152,
+   "sentenceData_contents": "The scientist's _______________ research led to a significant breakthrough in the field",
+   "sentenceData_word1": "Groundbreaking",
+   "sentenceData_word2": "Groundskeeper",
+   "sentenceData_word3": "Groundwork",
+   "sentenceData_word4": "Groundwater",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 153,
+   "sentenceData_contents": "The basketball player's _______________ jump allowed him to make the shot",
+   "sentenceData_word1": "Impressive",
+   "sentenceData_word2": "Impressively",
+   "sentenceData_word3": "Impressiveness",
+   "sentenceData_word4": "Impress",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 154,
+   "sentenceData_contents": "The storm caused _______________ flooding in the lowlying areas",
+   "sentenceData_word1": "Severe",
+   "sentenceData_word2": "Severity",
+   "sentenceData_word3": "Severely",
+   "sentenceData_word4": "Severance",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 155,
+   "sentenceData_contents": "The museum guide's _______________ tour provided a wealth of information about the exhibits",
+   "sentenceData_word1": "Enthusiastic",
+   "sentenceData_word2": "Enthusiasm",
+   "sentenceData_word3": "Enthuse",
+   "sentenceData_word4": "Enthusiastically",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 156,
+   "sentenceData_contents": "The _____________ of the orchestra made the audience clap for an encore",
+   "sentenceData_word1": "performance",
+   "sentenceData_word2": "performer",
+   "sentenceData_word3": "perform",
+   "sentenceData_word4": "performanceary",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 157,
+   "sentenceData_contents": "The country's _____________ system has many social benefits",
+   "sentenceData_word1": "welfare",
+   "sentenceData_word2": "welfarism",
+   "sentenceData_word3": "welfarist",
+   "sentenceData_word4": "welfarely",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 158,
+   "sentenceData_contents": "The _____________ of the new shopping mall has attracted many customers",
+   "sentenceData_word1": "conveniency",
+   "sentenceData_word2": "convenience",
+   "sentenceData_word3": "conveniently",
+   "sentenceData_word4": "convening",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 159,
+   "sentenceData_contents": "The _____________ lawyer argued that his client was innocent",
+   "sentenceData_word1": "defenseless",
+   "sentenceData_word2": "defense",
+   "sentenceData_word3": "defensed",
+   "sentenceData_word4": "defenseful",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 160,
+   "sentenceData_contents": "The exciting _____________ ride left us breathless",
+   "sentenceData_word1": "rollercoaster",
+   "sentenceData_word2": "rollerskating",
+   "sentenceData_word3": "rollerblade",
+   "sentenceData_word4": "rollerprint",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 161,
+   "sentenceData_contents": "The _____________ between the two nations had been tense for years",
+   "sentenceData_word1": "diplomacy",
+   "sentenceData_word2": "diplomat",
+   "sentenceData_word3": "diplomatic",
+   "sentenceData_word4": "diplomatically",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 162,
+   "sentenceData_contents": "The _____________ landscape of the desert was breathtaking",
+   "sentenceData_word1": "aridity",
+   "sentenceData_word2": "aridness",
+   "sentenceData_word3": "aridly",
+   "sentenceData_word4": "arid",
+   "sentenceData_answerword": "D"
+ },
+ {
+   "idsentenceData": 163,
+   "sentenceData_contents": "The new employee's _____________ attitude made a good impression on his colleagues",
+   "sentenceData_word1": "positeness",
+   "sentenceData_word2": "positive",
+   "sentenceData_word3": "positivist",
+   "sentenceData_word4": "positively",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 164,
+   "sentenceData_contents": "The _____________ of the scientist's research was published in a prestigious journal",
+   "sentenceData_word1": "significance",
+   "sentenceData_word2": "significant",
+   "sentenceData_word3": "significantly",
+   "sentenceData_word4": "significancy",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 165,
+   "sentenceData_contents": "The _____________ of the new restaurant was impressive",
+   "sentenceData_word1": "decoration",
+   "sentenceData_word2": "decorate",
+   "sentenceData_word3": "decorative",
+   "sentenceData_word4": "decoratively",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 166,
+   "sentenceData_contents": "The doctor prescribed a _______________ medication to treat the patient's illness",
+   "sentenceData_word1": "curative",
+   "sentenceData_word2": "cure",
+   "sentenceData_word3": "curability",
+   "sentenceData_word4": "cured",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 167,
+   "sentenceData_contents": "The _______________ painting was sold for millions of dollars at the auction",
+   "sentenceData_word1": "masterpiece",
+   "sentenceData_word2": "masterful",
+   "sentenceData_word3": "mastery",
+   "sentenceData_word4": "mastermind",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 168,
+   "sentenceData_contents": "The _______________ journalist reported the news accurately and fairly",
+   "sentenceData_word1": "objective",
+   "sentenceData_word2": "objectionable",
+   "sentenceData_word3": "objectify",
+   "sentenceData_word4": "objurgate",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 169,
+   "sentenceData_contents": "The _______________ athlete broke the world record in the meter dash",
+   "sentenceData_word1": "phenomenal",
+   "sentenceData_word2": "phenomenon",
+   "sentenceData_word3": "phenomenally",
+   "sentenceData_word4": "phenomenology",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 170,
+   "sentenceData_contents": "The _______________ of the novel was complex and difficult to understand",
+   "sentenceData_word1": "plot",
+   "sentenceData_word2": "ploy",
+   "sentenceData_word3": "plausible",
+   "sentenceData_word4": "plaudit",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 171,
+   "sentenceData_contents": "The scientist used a _______________ method to conduct the experiment",
+   "sentenceData_word1": "systematic",
+   "sentenceData_word2": "system",
+   "sentenceData_word3": "systematize",
+   "sentenceData_word4": "systemless",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 172,
+   "sentenceData_contents": "The _______________ atmosphere in the room made it difficult to breathe",
+   "sentenceData_word1": "suffocating",
+   "sentenceData_word2": "suffocative",
+   "sentenceData_word3": "suffocation",
+   "sentenceData_word4": "suffocated",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 173,
+   "sentenceData_contents": "The _______________ of the elegant restaurant was impressive",
+   "sentenceData_word1": "ambiance",
+   "sentenceData_word2": "ambience",
+   "sentenceData_word3": "ambient",
+   "sentenceData_word4": "ambiguously",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 174,
+   "sentenceData_contents": "The _______________ of the movie was a surprise to the audience",
+   "sentenceData_word1": "plot",
+   "sentenceData_word2": "plotter",
+   "sentenceData_word3": "plottage",
+   "sentenceData_word4": "plotless",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 175,
+   "sentenceData_contents": "The _______________ performance of the musician brought the crowd to its feet",
+   "sentenceData_word1": "mesmerizing",
+   "sentenceData_word2": "mesmerize",
+   "sentenceData_word3": "mesmerism",
+   "sentenceData_word4": "mesmerist",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 176,
+   "sentenceData_contents": "The ____ of the play was tragic; with a heartbreaking storyline and emotional characters ",
+   "sentenceData_word1": "genre",
+   "sentenceData_word2": "tone",
+   "sentenceData_word3": "mood",
+   "sentenceData_word4": "setting",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 177,
+   "sentenceData_contents": "The ____ of the building was impressive; with towering walls and intricate architecture ",
+   "sentenceData_word1": "scale",
+   "sentenceData_word2": "size",
+   "sentenceData_word3": "height",
+   "sentenceData_word4": "width",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 178,
+   "sentenceData_contents": "The ____ of the dance performance was graceful; with fluid movements and elegant choreography ",
+   "sentenceData_word1": "style",
+   "sentenceData_word2": "technique",
+   "sentenceData_word3": "rhythm",
+   "sentenceData_word4": "tempo",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 179,
+   "sentenceData_contents": "The ____ of the movie was scifi; set in a futuristic world with advanced technology ",
+   "sentenceData_word1": "plot",
+   "sentenceData_word2": "theme",
+   "sentenceData_word3": "genre",
+   "sentenceData_word4": "character",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 180,
+   "sentenceData_contents": "The ____ of the artist's work was abstract expressionism; with bold colors and sweeping brushstrokes ",
+   "sentenceData_word1": "style",
+   "sentenceData_word2": "genre",
+   "sentenceData_word3": "technique",
+   "sentenceData_word4": "theme",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 181,
+   "sentenceData_contents": "The ____ of the ocean waves was calming; with a rhythmic sound ",
+   "sentenceData_word1": "volume",
+   "sentenceData_word2": "pitch",
+   "sentenceData_word3": "timbre",
+   "sentenceData_word4": "frequency",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 182,
+   "sentenceData_contents": "The ____ of the speaker was articulate; with wellformed sentences and clear pronunciation ",
+   "sentenceData_word1": "diction",
+   "sentenceData_word2": "syntax",
+   "sentenceData_word3": "grammar",
+   "sentenceData_word4": "spelling",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 183,
+   "sentenceData_contents": "The ____ of the building was bland and uninteresting; with a plain facade ",
+   "sentenceData_word1": "architecture",
+   "sentenceData_word2": "style",
+   "sentenceData_word3": "design",
+   "sentenceData_word4": "construction",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 184,
+   "sentenceData_contents": "The ____ of the cuisine was spicy; with bold flavors and heat ",
+   "sentenceData_word1": "taste",
+   "sentenceData_word2": "flavor",
+   "sentenceData_word3": "aroma",
+   "sentenceData_word4": "texture",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 185,
+   "sentenceData_contents": "The ____ of the dance was energetic; with dynamic movements and fast tempo ",
+   "sentenceData_word1": "tempo",
+   "sentenceData_word2": "rhythm",
+   "sentenceData_word3": "beat",
+   "sentenceData_word4": "melody",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 186,
+   "sentenceData_contents": "The ____ of the movie was comedic; with humorous situations and witty dialogue ",
+   "sentenceData_word1": "genre",
+   "sentenceData_word2": "plot",
+   "sentenceData_word3": "character",
+   "sentenceData_word4": "setting",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 187,
+   "sentenceData_contents": "The ____ of the music was uplifting; with a positive message and catchy beat ",
+   "sentenceData_word1": "tone",
+   "sentenceData_word2": "theme",
+   "sentenceData_word3": "melody",
+   "sentenceData_word4": "harmony",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 188,
+   "sentenceData_contents": "The ____ of the wilderness was rugged; with rough terrain and natural beauty ",
+   "sentenceData_word1": "scenery",
+   "sentenceData_word2": "landscape",
+   "sentenceData_word3": "setting",
+   "sentenceData_word4": "backdrop",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 189,
+   "sentenceData_contents": "The ____ of the conversation was heated; with passionate arguments on both sides ",
+   "sentenceData_word1": "intensity",
+   "sentenceData_word2": "frequency",
+   "sentenceData_word3": "duration",
+   "sentenceData_word4": "amplitude",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 190,
+   "sentenceData_contents": "The ____ of the book was informative; with valuable insights and knowledge on the subject ",
+   "sentenceData_word1": "content",
+   "sentenceData_word2": "structure",
+   "sentenceData_word3": "language",
+   "sentenceData_word4": "plot",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 191,
+   "sentenceData_contents": "The company _____________ new employees through a rigorous hiring process ",
+   "sentenceData_word1": "screens",
+   "sentenceData_word2": "screener",
+   "sentenceData_word3": "screened",
+   "sentenceData_word4": "screening",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 192,
+   "sentenceData_contents": "The company has a _____________ policy for environmental sustainability ",
+   "sentenceData_word1": "green",
+   "sentenceData_word2": "greenery",
+   "sentenceData_word3": "greenish",
+   "sentenceData_word4": "greenness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 193,
+   "sentenceData_contents": "The CEO _____________ the employees for their hard work and dedication ",
+   "sentenceData_word1": "commended",
+   "sentenceData_word2": "commender",
+   "sentenceData_word3": "commendable",
+   "sentenceData_word4": "commendation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 194,
+   "sentenceData_contents": "The company's _____________ service team is available / to assist customers ",
+   "sentenceData_word1": "customer",
+   "sentenceData_word2": "customerize",
+   "sentenceData_word3": "customerization",
+   "sentenceData_word4": "customerizing",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 195,
+   "sentenceData_contents": "The company's _____________ procedures ensure the safety of all employees ",
+   "sentenceData_word1": "security",
+   "sentenceData_word2": "secured",
+   "sentenceData_word3": "securement",
+   "sentenceData_word4": "securely",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 196,
+   "sentenceData_contents": "The new product has _____________ features that make it stand out in the market ",
+   "sentenceData_word1": "innovative",
+   "sentenceData_word2": "innovator",
+   "sentenceData_word3": "innovate",
+   "sentenceData_word4": "innovation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 197,
+   "sentenceData_contents": "The company's _____________ strategy helped it expand its business globally ",
+   "sentenceData_word1": "marketing",
+   "sentenceData_word2": "marketer",
+   "sentenceData_word3": "marketable",
+   "sentenceData_word4": "marketeer",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 198,
+   "sentenceData_contents": "The company's _____________ initiative focuses on reducing waste and promoting sustainability ",
+   "sentenceData_word1": "environmental",
+   "sentenceData_word2": "environmentally",
+   "sentenceData_word3": "environ",
+   "sentenceData_word4": "environmentality",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 199,
+   "sentenceData_contents": "The CEO's _____________ vision for the company inspired employees to work harder ",
+   "sentenceData_word1": "visionary",
+   "sentenceData_word2": "visualize",
+   "sentenceData_word3": "visual",
+   "sentenceData_word4": "visualization",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 200,
+   "sentenceData_contents": "The company has a _____________ system in place to ensure fair treatment for all employees ",
+   "sentenceData_word1": "compensation",
+   "sentenceData_word2": "compensating",
+   "sentenceData_word3": "compensate",
+   "sentenceData_word4": "compensatory",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 201,
+   "sentenceData_contents": "The company plans to _______________ its operations in Asia",
+   "sentenceData_word1": "expand",
+   "sentenceData_word2": "expansion",
+   "sentenceData_word3": "expansively",
+   "sentenceData_word4": "expandable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 202,
+   "sentenceData_contents": "The _______________ of the new product is scheduled for next month",
+   "sentenceData_word1": "launch",
+   "sentenceData_word2": "launcher",
+   "sentenceData_word3": "launchpad",
+   "sentenceData_word4": "launchable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 203,
+   "sentenceData_contents": "The manager _______________ the employees for their hard work",
+   "sentenceData_word1": "praised",
+   "sentenceData_word2": "praiseworthy",
+   "sentenceData_word3": "praiseful",
+   "sentenceData_word4": "praiser",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 204,
+   "sentenceData_contents": "The _______________ customer returned the faulty product for a refund",
+   "sentenceData_word1": "dissatisfied",
+   "sentenceData_word2": "satisfying",
+   "sentenceData_word3": "satisfiable",
+   "sentenceData_word4": "satisfaction",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 205,
+   "sentenceData_contents": "The company provides _______________ training to its employees",
+   "sentenceData_word1": "regular",
+   "sentenceData_word2": "regularly",
+   "sentenceData_word3": "regulation",
+   "sentenceData_word4": "regulatory",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 206,
+   "sentenceData_contents": "The new software program is _______________ with all operating systems",
+   "sentenceData_word1": "compatible",
+   "sentenceData_word2": "compatibility",
+   "sentenceData_word3": "compatibly",
+   "sentenceData_word4": "compatibleness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 207,
+   "sentenceData_contents": "The company held a _______________ to discuss the upcoming project",
+   "sentenceData_word1": "meeting",
+   "sentenceData_word2": "meetingly",
+   "sentenceData_word3": "meetable",
+   "sentenceData_word4": "meetness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 208,
+   "sentenceData_contents": "The president delivered a _______________ speech to the nation",
+   "sentenceData_word1": "powerful",
+   "sentenceData_word2": "powerfully",
+   "sentenceData_word3": "powerless",
+   "sentenceData_word4": "powerlessness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 209,
+   "sentenceData_contents": "The company _______________ its profits this year compared to last year",
+   "sentenceData_word1": "increased",
+   "sentenceData_word2": "increase",
+   "sentenceData_word3": "increaser",
+   "sentenceData_word4": "increasing",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 210,
+   "sentenceData_contents": "The waiters provided _______________ service to the customers",
+   "sentenceData_word1": "excellent",
+   "sentenceData_word2": "excellently",
+   "sentenceData_word3": "excellence",
+   "sentenceData_word4": "excellency",
+   "sentenceData_answerword": "B"
+ },
+ {
+   "idsentenceData": 211,
+   "sentenceData_contents": "The _______________ building was designed by a famous architect",
+   "sentenceData_word1": "iconic",
+   "sentenceData_word2": "icon",
+   "sentenceData_word3": "iconicity",
+   "sentenceData_word4": "iconically",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 212,
+   "sentenceData_contents": "The company created a new _______________ department to handle customer complaints",
+   "sentenceData_word1": "customer",
+   "sentenceData_word2": "serviced",
+   "sentenceData_word3": "serviceable",
+   "sentenceData_word4": "servicing",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 213,
+   "sentenceData_contents": "The CEO gave a _______________ presentation to the board of directors",
+   "sentenceData_word1": "persuasive",
+   "sentenceData_word2": "persuasion",
+   "sentenceData_word3": "persuasively",
+   "sentenceData_word4": "persuasiveness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 214,
+   "sentenceData_contents": "The company has a strict _______________ policy for all employees",
+   "sentenceData_word1": "dress",
+   "sentenceData_word2": "code",
+   "sentenceData_word3": "codex",
+   "sentenceData_word4": "codec",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 215,
+   "sentenceData_contents": "The _______________ restaurant has a menu that features international cuisine",
+   "sentenceData_word1": "gourmet",
+   "sentenceData_word2": "gourmand",
+   "sentenceData_word3": "gourmandize",
+   "sentenceData_word4": "gourmandise",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 216,
+   "sentenceData_contents": "The _______________ of the hotel include a gym; spa; and pool",
+   "sentenceData_word1": "amenities",
+   "sentenceData_word2": "amenity",
+   "sentenceData_word3": "amenitized",
+   "sentenceData_word4": "amenityize",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 217,
+   "sentenceData_contents": "The company offers _______________ opportunities for its employees to advance their careers",
+   "sentenceData_word1": "promotional",
+   "sentenceData_word2": "promote",
+   "sentenceData_word3": "promoting",
+   "sentenceData_word4": "promotable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 218,
+   "sentenceData_contents": "The company _______________ its workers to wear safety gear in the factory",
+   "sentenceData_word1": "requires",
+   "sentenceData_word2": "requirement",
+   "sentenceData_word3": "requiring",
+   "sentenceData_word4": "requirable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 219,
+   "sentenceData_contents": "The new employee was _______________ to the team and quickly adapted to the workplace",
+   "sentenceData_word1": "welcoming",
+   "sentenceData_word2": "welcome",
+   "sentenceData_word3": "welcomed",
+   "sentenceData_word4": "welcomely",
+   "sentenceData_answerword": "C"
+ },
+ {
+   "idsentenceData": 220,
+   "sentenceData_contents": "The company is known for its _______________ products that are durable and longlasting",
+   "sentenceData_word1": "highquality",
+   "sentenceData_word2": "quality",
+   "sentenceData_word3": "qualify",
+   "sentenceData_word4": "quality",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 221,
+   "sentenceData_contents": "The company's _______________ policy includes health insurance and retirement benefits",
+   "sentenceData_word1": "compensation",
+   "sentenceData_word2": "compensate",
+   "sentenceData_word3": "compensated",
+   "sentenceData_word4": "compensator",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 222,
+   "sentenceData_contents": "The sales team _______________ their sales targets for the quarter",
+   "sentenceData_word1": "surpassed",
+   "sentenceData_word2": "surpassing",
+   "sentenceData_word3": "surpasser",
+   "sentenceData_word4": "surpassible",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 223,
+   "sentenceData_contents": "The company has a _______________ deadline for the project",
+   "sentenceData_word1": "strict",
+   "sentenceData_word2": "strictly",
+   "sentenceData_word3": "stricture",
+   "sentenceData_word4": "stricken",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 224,
+   "sentenceData_contents": "The new software program _______________ the user to perform multiple tasks at once",
+   "sentenceData_word1": "enables",
+   "sentenceData_word2": "enablement",
+   "sentenceData_word3": "enabled",
+   "sentenceData_word4": "enabler",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 225,
+   "sentenceData_contents": "The company has a _______________ reputation for its customer service",
+   "sentenceData_word1": "solid",
+   "sentenceData_word2": "solidify",
+   "sentenceData_word3": "solidity",
+   "sentenceData_word4": "solidness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 226,
+   "sentenceData_contents": "The company's new product is _______________ with the latest technology",
+   "sentenceData_word1": "compatible",
+   "sentenceData_word2": "compatibility",
+   "sentenceData_word3": "compatibly",
+   "sentenceData_word4": "compatibleness",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 227,
+   "sentenceData_contents": "The company _______________ its employees to participate in volunteer activities in the community",
+   "sentenceData_word1": "encourages",
+   "sentenceData_word2": "encourageable",
+   "sentenceData_word3": "encouraging",
+   "sentenceData_word4": "encourager",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 228,
+   "sentenceData_contents": "The company's _______________ strategy helped them increase sales in the Asian market",
+   "sentenceData_word1": "marketing",
+   "sentenceData_word2": "marketer",
+   "sentenceData_word3": "marketeer",
+   "sentenceData_word4": "marketable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 229,
+   "sentenceData_contents": "The company's _______________ policies comply with all local and federal regulations",
+   "sentenceData_word1": "employment",
+   "sentenceData_word2": "employable",
+   "sentenceData_word3": "employing",
+   "sentenceData_word4": "employee",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 230,
+   "sentenceData_contents": "The company organized a _______________ to introduce their new product to the audience",
+   "sentenceData_word1": "launch",
+   "sentenceData_word2": "launcher",
+   "sentenceData_word3": "launchpad",
+   "sentenceData_word4": "launchable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 231,
+   "sentenceData_contents": "The company is currently _____________ a new marketing campaign",
+   "sentenceData_word1": "developing",
+   "sentenceData_word2": "development",
+   "sentenceData_word3": "developer",
+   "sentenceData_word4": "developable",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 232,
+   "sentenceData_contents": "The job candidate's _____________ qualifications were impressive",
+   "sentenceData_word1": "professional",
+   "sentenceData_word2": "professionalism",
+   "sentenceData_word3": "professionally",
+   "sentenceData_word4": "professionality",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 233,
+   "sentenceData_contents": "The company _____________ its employees to attend regular training sessions",
+   "sentenceData_word1": "encourages",
+   "sentenceData_word2": "discourage",
+   "sentenceData_word3": "encouraging",
+   "sentenceData_word4": "encouragement",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 234,
+   "sentenceData_contents": "The company has a _____________ reputation for its ethical business practices",
+   "sentenceData_word1": "stellar",
+   "sentenceData_word2": "steller",
+   "sentenceData_word3": "stellify",
+   "sentenceData_word4": "stellic",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 235,
+   "sentenceData_contents": "The company _____________ its profit margins last quarter ",
+   "sentenceData_word1": "increased",
+   "sentenceData_word2": "increase",
+   "sentenceData_word3": "increaser",
+   "sentenceData_word4": "increasing",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 236,
+   "sentenceData_contents": "The new employee _____________ herself to the company culture quickly ",
+   "sentenceData_word1": "assimilated",
+   "sentenceData_word2": "assimilate",
+   "sentenceData_word3": "assimilator",
+   "sentenceData_word4": "assimilation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 237,
+   "sentenceData_contents": "The company _____________ their employees based on their skills and experience ",
+   "sentenceData_word1": "evaluates",
+   "sentenceData_word2": "evaluator",
+   "sentenceData_word3": "evaluated",
+   "sentenceData_word4": "evaluation",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 238,
+   "sentenceData_contents": "The _____________ conference was organized by the company to promote its new products ",
+   "sentenceData_word1": "promotional",
+   "sentenceData_word2": "promote",
+   "sentenceData_word3": "promoting",
+   "sentenceData_word4": "promoted",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 239,
+   "sentenceData_contents": "The company's _____________ policy allows employees to work from home ",
+   "sentenceData_word1": "flexible",
+   "sentenceData_word2": "flex",
+   "sentenceData_word3": "flexibly",
+   "sentenceData_word4": "flexibility",
+   "sentenceData_answerword": "A"
+ },
+ {
+   "idsentenceData": 240,
+   "sentenceData_contents": "The _____________ of the company's products allowed it to dominate the market ",
+   "sentenceData_word1": "quality",
+   "sentenceData_word2": "qualitative",
+   "sentenceData_word3": "quality",
+   "sentenceData_word4": "quality",
+   "sentenceData_answerword": "A"
+ }
+]
