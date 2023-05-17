@@ -4,9 +4,12 @@ var quizAsk = document.querySelector(".quiz_question .ask");
 const quizconfirm = document.querySelector(".quiz_try .confirm");
 var quizResult = document.querySelector(".quiz_try .result");
 
+var quizExplanation = document.querySelector(".user .explanation")
+
 var quizSelects = document.querySelector(".quiz_selects");
 var quizChoice = quizSelects.querySelectorAll(".choice");
 var quizSelect = quizSelects.querySelectorAll(".select");
+
 var quizInfo = [];
 const quizNext = document.getElementById("next-btn");
 const quizBefore = document.getElementById("before-btn");
@@ -44,7 +47,7 @@ function updateQuiz(index) {
     quizSelect[i].checked = false; // 선택 해제
   }
 }
-
+//quizInfo[index].Explanation
 function answerQuiz() {
   var selectedValue;
   var answerValue;
@@ -74,8 +77,11 @@ function answerQuiz() {
   } else {
     quizResult.textContent = "Wrong";
   }
+  Show_Explanation();
 }
-
+function Show_Explanation(){
+    quizExplanation.textContent = quizInfo[idx].Explanation;
+}
 quizconfirm.addEventListener("click", answerQuiz);
 
 function nextQuiz() {
@@ -84,6 +90,8 @@ function nextQuiz() {
     idx += 1;
     localStorage.setItem('quizIndex', idx);  // idx 값을 로컬 저장소에 저장
     updateQuiz(idx);
+
+    quizExplanation.removeChild();
   } else {
     alert("No more quizzes");
   }
@@ -97,6 +105,8 @@ function beforeQuiz() {
     localStorage.setItem('quizIndex', idx);  // idx 값을 로컬 저장소에 저장
     idx -= 1;
     updateQuiz(idx);
+
+    quizExplanation.removeChild();
   } else {
     alert("This is the first quiz");
   }

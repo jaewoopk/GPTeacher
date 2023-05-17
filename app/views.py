@@ -5,6 +5,8 @@ from rest_framework.response import Response
 from .serializers import RegisterSerializer, LoginSerializer
 
 from django.http import HttpResponse
+from django.http import JsonResponse
+from django.core import serializers
 from django.views.generic import TemplateView
 from django.views.generic import View
 from django.shortcuts import render, redirect
@@ -31,6 +33,8 @@ def index(request):
 '''
 class index(TemplateView):
     template_name = 'index.html'
+class join(TemplateView):
+    template_name = 'app/english/join.html'
 '''
 class join(TemplateView):
     template_name = 'app/english/join.html'
@@ -75,7 +79,7 @@ def join(request):
         print(request.POST['password'])
 
         res_data = {}
-        
+
         if not (username and password and re_password) :
             res_data['error'] = '전부 입력해야 합니다'
         elif password != re_password :
@@ -88,9 +92,40 @@ def join(request):
             else :
                 user = appUser(userid=username, password=make_password(password))
                 user.save()
-                return redirect('apps:login')      
+                return redirect('apps:login')
         return render(request, 'app/english/join.html', res_data)
 
+
+def register(request):
+    if request.method == 'GET':
+        return render(request, 'app/english/jointtest.html')
+
+    elif request.method == 'POST':
+        username = request.POST.get('email', None)
+        password = request.POST.get('password', None)
+        re_password = request.POST.get('password', None)
+        print(request.POST['email'])
+        print(request.POST['password'])
+
+        res_data = {}
+
+        if not (username and password and re_password):
+            res_data['error'] = '전부 입력해야 합니다'
+            print("error1")
+        elif password != re_password:
+            res_data['error'] = '비밀번호가 다릅니다'
+            print("error2")
+        else:
+            print("error999")
+            entry = appUser.objects.filter(userid=username)
+            if entry.exists():
+                res_data['error'] = '아이디 중복'
+                return render(request, 'app/english/join.html', res_data)
+            else:
+                user = appUser(userid=username, password=make_password(password))
+                user.save()
+                return redirect('apps:main')
+        return render(request, 'app/english/join.html', res_data)
         
 def login(request) :
     response_data = {}
@@ -134,9 +169,6 @@ def study(request) :
         if 'user' in request.session:
             return render(request, 'app/english/study.html')
         else :
-            datas11 = Sentencedata.objects.all().order_by('idsentencedata')[:1]
-            context = {'Sentencedata': datas11}
-            return render(request, 'app/english/study.html', context)
             return redirect('apps:login')
 
 def rank(request) :
@@ -152,7 +184,19 @@ def mypage(request) :
             return render(request, 'app/english/mypage.html')
         else :
             return redirect('apps:login')
-
+def get_quiz_data(request):
+    if request.method == 'GET':
+        datas = Sentencedata.objects.values(
+            'idsentencedata',
+            'sentencedata_contents',
+            'sentencedata_word1',
+            'sentencedata_word2',
+            'sentencedata_word3',
+            'sentencedata_word4',
+            'sentencedata_answerword'
+        ).order_by('idsentencedata')
+        data_list = list(datas)
+        return JsonResponse(data_list, safe=False)
 # # --> FBV : Function Based View = 함수 기반 뷰
 # @api_view(['GET']) # Decorator -> 함수를 꾸미는 역할(함수에 대한 성격을 표시해주는 표기법)
 # def HelloAPI(request) :

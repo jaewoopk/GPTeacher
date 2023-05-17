@@ -3,8 +3,7 @@ import time
 import openpyxl
 # API 키
 
-OPENAI_API_KEY = "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"
-
+OPENAI_API_KEY = "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"
 openai.api_key = OPENAI_API_KEY
 
 model = "gpt-3.5-turbo"
@@ -18,7 +17,7 @@ wb = openpyxl.load_workbook(fpath)
 ws = wb['문장모음']
 k = 101
 for n in range(100):
-    time.sleep(40)
+
     k = k + 25
     for i in range(5):
         if n % 4 == 0:
@@ -30,7 +29,8 @@ for n in range(100):
         else:
             content = "Make 10 fill-in-the-blank TEPS vocabulary problems with 4 choices. provide answer."
         messages.append({"role": "user", "content": content})
-        time.sleep(30)
+
+        print(messages)
         completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=messages
@@ -39,7 +39,7 @@ for n in range(100):
         chat_response = completion.choices[0].message.content
     # chat_response 는 str 변수이다.
         print(chat_response)
-        chat_response = chat_response.replace('Answer: ', '').replace('-', '').replace(')', '').replace('.','')
+        chat_response = chat_response.replace('Answer:', '').replace('-', '').replace(')', ' ').replace('.','').replace('Explanation:')
         sentenceNum=0
         for M in range(1,10):
 
