@@ -12,14 +12,14 @@ urlpatterns = [
     #path('index/', index.as_view()),
 
     path('english/', lambda r: redirect('apps:login')),
-    path('english/join/', join.as_view(), name= 'join'),
+    #path('english/join/', join.as_view(), name= 'join'),
     #path('english/login/', login.as_view(), name= 'login'),
     #path('english/mypage/', mypage.as_view(), name= 'mypage'),
     #path('english/rank/', rank.as_view(), name= 'rank'),
     #path('english/study/', study.as_view(), name= 'study'),
     path('english/jointtest/', jointest.as_view(), name= 'test'),
 
-    path('english/register/', views.register),
+    path('english/join/', views.join),
     path('english/login/', views.login, name= 'login'),
 
     path('english/main/', views.main, name= 'main'),

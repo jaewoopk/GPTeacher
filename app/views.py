@@ -31,9 +31,10 @@ def index(request):
 '''
 class index(TemplateView):
     template_name = 'index.html'
-
+'''
 class join(TemplateView):
     template_name = 'app/english/join.html'
+'''
 '''
 class login(TemplateView):
     template_name = 'app\english\login.html'
@@ -62,9 +63,9 @@ class jointest(View):
         print(request.POST['password'])
         return render(request, self.template_name, context=result)
         
-def register(request):
+def join(request):
     if request.method == 'GET' :
-        return render(request, 'app/english/jointtest.html')
+        return render(request, 'app/english/join.html')
 
     elif request.method == 'POST' :
         username = request.POST.get('email', None)

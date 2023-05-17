@@ -14,15 +14,18 @@
     <h2>title</h2>
 
     <div id="menu">
+        <a>join</a>
+        <!--
         <a href="login.html">Login</a>
         <a href="main.html">Main</a>
         <a href="study.html">Study</a>
         <a href="rank.html">Rank</a>
         <a href="mypage.html">Mypage</a>
+        -->
     </div>
 
     <div class="join-form">
-        <form method="POST" action="../register/" enctype="multipart/form-data">
+        <form method="POST" action="../join/" enctype="multipart/form-data">
             {% csrf_token %}
             <b class="name">ID</b><br>
             <input type="text" name="email" class="text-field" placeholder="id"><br>
