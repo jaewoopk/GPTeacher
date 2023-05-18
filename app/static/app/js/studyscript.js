@@ -5,12 +5,13 @@ const quizconfirm = document.querySelector(".quiz_try .confirm");
 var quizResult = document.querySelector(".quiz_try .result");
 
 var quizExplanation = document.querySelector(".user .explanation")
-
+var idx_update  = document.querySelector(".menuex .testidx")
 var quizSelects = document.querySelector(".quiz_selects");
 var quizChoice = quizSelects.querySelectorAll(".choice");
 var quizSelect = quizSelects.querySelectorAll(".select");
 
 var quizInfo = [];
+
 const quizNext = document.getElementById("next-btn");
 const quizBefore = document.getElementById("before-btn");
 
@@ -28,7 +29,7 @@ xhr.onreadystatechange = function () {
 xhr.send();
 
 function initializeQuizInfo(data) {
-  idx = 0;
+  idx = test-1;
   quizInfo = data;
   updateQuiz(idx); // 초기화 후 문제를 업데이트합니다.
 }
@@ -37,7 +38,7 @@ function updateQuiz(index) {
   quizNumber.textContent = quizInfo[index].idsentenceData + ". ";
   quizAsk.textContent = quizInfo[index].sentenceData_contents;
   quizResult.textContent = "";
-
+  document.getElementById('idx_update').value = index+1;
   quizChoice[0].textContent = quizInfo[index].sentenceData_word1;
   quizChoice[1].textContent = quizInfo[index].sentenceData_word2;
   quizChoice[2].textContent = quizInfo[index].sentenceData_word3;

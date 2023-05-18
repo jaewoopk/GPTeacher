@@ -144,8 +144,10 @@ def login(request) :
             entry = appUser.objects.filter(userid=log_username)
             if entry.exists() :
                 dbuser = appUser.objects.get(userid=log_username)
+                print(log_username)
+                print(dbuser.userid)
                 if check_password(log_password, dbuser.password):
-                    request.session['user'] = dbuser.id
+                    request.session['user'] = dbuser.userid
                     request.session.get_expire_at_browser_close()
                     return redirect('apps:main')
                 else :
@@ -161,15 +163,36 @@ def logout(request) :
 def main(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
+
             return render(request, 'app/english/main.html')
 
 
 def study(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
-            return render(request, 'app/english/study.html')
+            #deuser.id = request.session['user']
+            user_id = request.session.get('user')
+
+            current_user = appUser.objects.get(userid=user_id)
+
+            msg = current_user.user_idx
+
+            return render(request, 'app/english/study.html', {'message':msg} )
         else :
             return redirect('apps:login')
+    elif request.method =='POST':
+
+        if 'user' in request.session:
+            user_id = request.session.get('user')
+            current_user = appUser.objects.get(userid=user_id)
+            current_user.user_idx = request.POST.get('idx_update')
+
+        current_user.save()
+        user_id = request.session.get('user')
+
+        current_user = appUser.objects.get(userid=user_id)
+
+        return render(request, 'app/english/main.html')
 
 def rank(request) :
     if request.method == 'GET' :
@@ -184,6 +207,7 @@ def mypage(request) :
             return render(request, 'app/english/mypage.html')
         else :
             return redirect('apps:login')
+
 def get_quiz_data(request):
     if request.method == 'GET':
         datas = Sentencedata.objects.values(

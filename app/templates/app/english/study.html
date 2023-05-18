@@ -9,7 +9,9 @@
     <title>EnglishStudy</title>
     <link rel="stylesheet" href="../../../static/app/css/styles.css">
     <link rel="stylesheet" href="../../../static/app/css/stylestwo.css">
-    
+    <script type="text/javascript" >
+        var test = "{{message}}";
+    </script>
 
 </head>
 <body>
@@ -54,7 +56,7 @@
                             <label for="select4">
                                 <input type="radio" id="select4" class="select" name="userAns" value="4" >
                                 <span class="choice"></span><br>
-                            
+
                             </label>
                         </form>
                     </div>
@@ -81,10 +83,21 @@
             </div>
             
         </div>
+        <div class="menuex">
 
+            <form method="POST" >
+                {% csrf_token %}
+                <input type ="hidden" id ="idx_update"  name="idx_update" value ="">
+                <p class="testidx"> </p>
+                <p><input type="submit" value="Exit"></p>
+            </form>
+
+        </div>
     </div>
     
-    <script src="../../../static/app/js/studyscript.js"></script>
+    <script type="text/javascript" src="../../../static/app/js/studyscript.js?ver=1">
+        var test = "{{message}}";
+    </script>
     
 
 </body>
