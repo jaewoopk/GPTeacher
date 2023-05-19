@@ -7,6 +7,7 @@ for synset in wn.synsets('good'):
 
 print("---------------------------------")
 '''
+'''
 synonyms = []
 for syn in wn.synsets("travel"):
     for lm in syn.lemmas():
@@ -20,3 +21,4 @@ for syn in wn.synsets("increase"):
         if lm.antonyms():
             antonyms.append(lm.antonyms()[0].name()) 
 print(set(antonyms))
+'''

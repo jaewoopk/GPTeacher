@@ -100,10 +100,23 @@
             <form method="POST" >
                 {% csrf_token %}
                 <input type ="hidden" id ="idx_update"  name="idx_update" value ="">
+                <input type ="hidden"  name="forwhat" value ="exit">
                 <p class="testidx"> </p>
                 <p><input type="submit" value="Exit"></p>
             </form>
 
+        </div>
+        
+        <div class="menuex2">
+
+            <form method="POST" >
+                {% csrf_token %}
+                <input type ="hidden" id ="idx_update2"  name="idx_update2" value ="">
+                <input type ="hidden"  name="forwhat" value ="book">
+                <p class="testidx2"> </p>
+                <p><input type="submit" value="mark"></p>
+            </form>
+            
         </div>
     </div>
     

@@ -181,18 +181,38 @@ def study(request) :
         else :
             return redirect('apps:login')
     elif request.method =='POST':
+        print(request.POST.get('forwhat'))
+        if request.POST.get('forwhat') == "book":
+            if 'user' in request.session:
+                user_id = request.session.get('user')
+                current_user = appUser.objects.get(userid=user_id)
+                print(request.POST.get('idx_update2'))
+                page = request.POST.get('idx_update2')
+                book = current_user.bookmark
 
-        if 'user' in request.session:
+                mark = book.split(',')
+                if not(str(page) in mark) :
+                    mark.append(page)
+                result = ' '.join(map(str, mark))
+
+                current_user.bookmark = result
+                #current_user.bookmark = ""
+    
+            current_user.save()
+            return render(request, 'app/english/main.html')
+        else :
+            if 'user' in request.session:
+                user_id = request.session.get('user')
+                current_user = appUser.objects.get(userid=user_id)
+                current_user.user_idx = request.POST.get('idx_update')
+                print(request.POST.get('idx_update'))
+            
+            current_user.save()
             user_id = request.session.get('user')
+
             current_user = appUser.objects.get(userid=user_id)
-            current_user.user_idx = request.POST.get('idx_update')
 
-        current_user.save()
-        user_id = request.session.get('user')
-
-        current_user = appUser.objects.get(userid=user_id)
-
-        return render(request, 'app/english/main.html')
+            return render(request, 'app/english/main.html')
 
 def rank(request) :
     if request.method == 'GET' :

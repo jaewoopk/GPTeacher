@@ -36,6 +36,7 @@ class User(models.Model) :
     userid = models.CharField(max_length=50, verbose_name='유저ID', unique=True)                # 유저 ID
     password = models.CharField(max_length=100, verbose_name='비밀번호')        # 유저 비밀번호
     user_idx = models.IntegerField(default=1, verbose_name='유저학습문장번호')
+    bookmark = models.CharField(max_length=1000, default="", verbose_name='북마크') 
     class Meta:
         db_table = 'test_user'
 
@@ -61,3 +62,6 @@ class Sentencedata(models.Model):
     class Meta:
         managed = False
         db_table = 'sentenceData'
+
+
+arr = []

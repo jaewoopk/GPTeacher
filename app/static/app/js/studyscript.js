@@ -6,6 +6,7 @@ var quizResult = document.querySelector(".quiz_try .result");
 
 var quizExplanation = document.querySelector(".user .explanation")
 var idx_update  = document.querySelector(".menuex .testidx")
+var idx_update2  = document.querySelector(".menuex2 .testidx2")
 var quizSelects = document.querySelector(".quiz_selects");
 var quizChoice = quizSelects.querySelectorAll(".choice");
 var quizSelect = quizSelects.querySelectorAll(".select");
@@ -41,6 +42,7 @@ function updateQuiz(index) {
   quizAsk.textContent = quizInfo[index].sentenceData_contents;
   quizResult.textContent = "";
   document.getElementById('idx_update').value = index+1;
+  document.getElementById('idx_update2').value = index+1;
   quizChoice[0].textContent = quizInfo[index].sentenceData_word1;
   quizChoice[1].textContent = quizInfo[index].sentenceData_word2;
   quizChoice[2].textContent = quizInfo[index].sentenceData_word3;
