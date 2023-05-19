@@ -10,6 +10,8 @@ var quizSelects = document.querySelector(".quiz_selects");
 var quizChoice = quizSelects.querySelectorAll(".choice");
 var quizSelect = quizSelects.querySelectorAll(".select");
 
+const quizView = document.querySelector(".user");             
+
 var quizInfo = [];
 
 const quizNext = document.getElementById("next-btn");
@@ -32,7 +34,7 @@ function initializeQuizInfo(data) {
   idx = test-1;
   quizInfo = data;
   updateQuiz(idx); // 초기화 후 문제를 업데이트합니다.
-}
+};
 
 function updateQuiz(index) {
   quizNumber.textContent = quizInfo[index].idsentenceData + ". ";
@@ -47,7 +49,8 @@ function updateQuiz(index) {
   for(let i = 0; i < quizSelect.length; i++) {
     quizSelect[i].checked = false; // 선택 해제
   }
-}
+};
+
 //quizInfo[index].Explanation
 function answerQuiz() {
   var selectedValue;
@@ -74,18 +77,23 @@ function answerQuiz() {
       break ;
   }
   if (selectedValue === answerValue) {
-    quizResult.textContent = "Correct";
+    quizView.classList.remove("negative");
+    quizView.classList.add("positive");
+
   } else {
-    quizResult.textContent = "Wrong";
+    quizView.classList.remove("positive");
+    quizView.classList.add("negative");
   }
   Show_Explanation();
-}
+};
+
 function Show_Explanation(){
     quizExplanation.textContent = quizInfo[idx].Explanation;
-}
+};
 quizconfirm.addEventListener("click", answerQuiz);
 
 function nextQuiz() {
+  quizView.classList.remove("positive", "negative");
   if (idx < quizInfo.length - 1) {
     alert("Next quiz move!!");
     idx += 1;
@@ -96,7 +104,7 @@ function nextQuiz() {
   } else {
     alert("No more quizzes");
   }
-}
+};
 
 quizNext.addEventListener("click", nextQuiz);
 
@@ -111,6 +119,6 @@ function beforeQuiz() {
   } else {
     alert("This is the first quiz");
   }
-}
+};
 
 quizBefore.addEventListener("click", beforeQuiz);
