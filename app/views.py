@@ -224,6 +224,13 @@ def rank(request) :
 def mypage(request) :
     if request.method == 'GET' :
         if request.session.get('user') != None :
+            user_id = request.session.get('user')
+            current_user = appUser.objects.get(userid=user_id)
+            book = current_user.bookmark
+            booklist = {}
+            mark = book.split(',')
+
+            
             return render(request, 'app/english/mypage.html')
         else :
             return redirect('apps:login')
@@ -241,6 +248,15 @@ def get_quiz_data(request):
         ).order_by('idsentencedata')
         data_list = list(datas)
         return JsonResponse(data_list, safe=False)
+
+
+def bookmark(request, page) :
+    if request.method == 'GET' :
+        if request.session.get('user') != None :
+            msg = page
+            return render(request, 'app/english/study.html', {'message':msg} )
+        else :
+            return redirect('apps:login')
 # # --> FBV : Function Based View = 함수 기반 뷰
 # @api_view(['GET']) # Decorator -> 함수를 꾸미는 역할(함수에 대한 성격을 표시해주는 표기법)
 # def HelloAPI(request) :
