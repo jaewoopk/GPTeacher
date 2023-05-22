@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import generics, status
 from rest_framework.response import Response
-
+import openai
 from .serializers import RegisterSerializer, LoginSerializer
 
 from django.http import HttpResponse
@@ -13,6 +13,11 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.hashers import make_password, check_password
 from .models import User as appUser
 from .models import Sentencedata
+from django.views.decorators.csrf import csrf_exempt
+import json
+
+OPENAI_API_KEY = "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"
+openai.api_key = OPENAI_API_KEY
 
 class RegisterView(generics.CreateAPIView) : # CreateAPIView(generics) 사용 구현
     queryset = User.objects.all()
@@ -166,22 +171,32 @@ def main(request) :
 
             return render(request, 'app/english/main.html')
 
+@csrf_exempt
 
 def study(request) :
     if request.method == 'GET' :
+
+
         if 'user' in request.session:
-            #deuser.id = request.session['user']
             user_id = request.session.get('user')
-
             current_user = appUser.objects.get(userid=user_id)
-
             msg = current_user.user_idx
 
-            return render(request, 'app/english/study.html', {'message':msg} )
+            print(request.GET.get('user_gpt_id_hidden'))
+            if request.GET.get('user_gpt_id_hidden') == 'user_gpt_id_ok':
+
+                GPT_respond = GPTeacher_answer(request.GET.get('user_answer_to_view'),request.GET.get('gpt_answer_to_view'),request.GET.get('user_gpt'))   # 정답 질문 / GPT 해설 / 유저 질문
+                print(GPT_respond)
+                GPT_respond = str(GPT_respond)
+                GPT_respond = GPT_respond.replace("\n", "")
+                return render(request, 'app/english/study.html', {'message':msg,'GPT_respond':GPT_respond} )
+            else:
+            #deuser.id = request.session['user']
+                GPT_respond = ""
+                return render(request, 'app/english/study.html', {'message':msg,'GPT_respond':GPT_respond} )
         else :
             return redirect('apps:login')
     elif request.method =='POST':
-        print(request.POST.get('forwhat'))
         if request.POST.get('forwhat') == "book":
             if 'user' in request.session:
                 user_id = request.session.get('user')
@@ -200,12 +215,13 @@ def study(request) :
     
             current_user.save()
             return render(request, 'app/english/main.html')
-        else :
+
+        elif request.POST.get('forwhat') == "exit":
             if 'user' in request.session:
                 user_id = request.session.get('user')
                 current_user = appUser.objects.get(userid=user_id)
                 current_user.user_idx = request.POST.get('idx_update')
-                print(request.POST.get('idx_update'))
+
             
             current_user.save()
             user_id = request.session.get('user')
@@ -213,7 +229,21 @@ def study(request) :
             current_user = appUser.objects.get(userid=user_id)
 
             return render(request, 'app/english/main.html')
-
+        else:
+            body = json.loads(request.body.decode('utf-8'))
+            print(body)
+            print("ajax성공")
+            text1 = body.get('sentence_answer')
+            print(text1)
+            text2 = body.get('explanation')
+            print(text2)
+            text3 = body.get('user_ask')
+            print(text3)
+            GPT_respond = GPTeacher_answer(text1, text2, text3)
+            print(GPT_respond)
+            GPT_respond = str(GPT_respond)
+            GPT_respond = GPT_respond.replace("\n", "")
+            return JsonResponse({"GPT_respond_ajax":GPT_respond})
 def rank(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
@@ -248,8 +278,20 @@ def get_quiz_data(request):
         ).order_by('idsentencedata')
         data_list = list(datas)
         return JsonResponse(data_list, safe=False)
+def GPTeacher_answer(text1,text2,text3):
+    message = []
+    message.append({"role": "user", "content": text1})
+    message.append({"role": "assistant", "content": text2})
+    message.append({"role": "user", "content": text3})
 
 
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages= message
+    )
+    chat_response = completion.choices[0].message.content
+
+    return chat_response
 def bookmark(request, page) :
     if request.method == 'GET' :
         if request.session.get('user') != None :

@@ -4,7 +4,7 @@ import openpyxl
 import copy
 # API 키
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 openai.api_key = OPENAI_API_KEY
 
 model = "gpt-3.5-turbo"
@@ -27,7 +27,8 @@ message10 = [{"role": "user", "content": "Make 5 English fill-in-the-blank gramm
 fpath = '/Users/KJH/Documents/GitHub/Capstone_6/excel/Sentence.xlsx'
 wb = openpyxl.load_workbook(fpath)
 ws = wb['문장모음']
-k =2277
+
+k =2478
 i = 0
 for s in range(50):
     while(True):             # 문장 7 개  # (6,0,-1) 역순 (7 ) 정순

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../../static/app/css/stylestwo.css">
     <script type="text/javascript" >
         var test = "{{message}}";
+        var GPT= "{{GPT_respond_ajax}}";
     </script>
 
 </head>
@@ -81,6 +82,19 @@
 
         <div class="user">
             <div class="explanation"></div>
+            <p id="user_gpt_id_text"> GPT 에게 추가질문 입력하기</p>
+            <form method="GET" name="user_to_gpt_form_name">
+                {% csrf_token %}
+                <input type="text" id = "user_gpt_id" name="user_gpt" class="user_gpt_ask" value =""  >
+                <input type ="hidden"  name="user_gpt_id_hidden" value="user_gpt_id_ok" >
+                <input type ="hidden"  name="user_answer_to_view" id="user_answer_to_view" value="">
+                <input type ="hidden"  name="gpt_answer_to_view" id="gpt_answer_to_view" value="">
+                <input type="button" value="대답해줘" id="ask_gpt"  >
+            </form>
+
+
+
+            <div class="gpt_respond_message"></div>
             <div class="conversation"></div>
             <div class="man">
                 <div class="head"></div>
@@ -122,6 +136,7 @@
     
     <script type="text/javascript" src="../../../static/app/js/studyscript.js?ver=1">
         var test = "{{message}}";
+        var GPT= "{{GPT_respond_ajax}}";
     </script>
     
 
