@@ -69,6 +69,16 @@
                     <input type="submit" value="submit" class="confirm" id="ans-btn"><br>
                     <div class="result"></div>
 
+                    <div class="bookmarkpart">
+                        <form method="POST" >
+                            {% csrf_token %}
+                            <input type ="hidden" id ="idx_update2"  name="idx_update2" value ="">
+                            <input type ="hidden"  name="forwhat" value ="book">
+                            <p class="testidx2"> </p>
+                            <p><input type="submit" id="book-btn" value="mark"></p>
+                        </form> 
+                    </div>
+            
                     
                     <form name="control-quiz">
                         <input type="button" value="▷" id="next-btn">
@@ -91,11 +101,8 @@
                 <input type ="hidden"  name="gpt_answer_to_view" id="gpt_answer_to_view" value="">
                 <input type="button" value="대답해줘" id="ask_gpt"  >
             </form>
-
-
-
             <div class="gpt_respond_message"></div>
-            <div class="conversation"></div>
+          
             <div class="man">
                 <div class="head"></div>
                 <div class="body"></div>
@@ -108,30 +115,18 @@
             <div class="no">WRONG</div>
             <div class="score">score:300</div>
         </div>
-        
-        <div class="menuex">
 
+
+        <div class="exitpart">
             <form method="POST" >
                 {% csrf_token %}
                 <input type ="hidden" id ="idx_update"  name="idx_update" value ="">
                 <input type ="hidden"  name="forwhat" value ="exit">
-                <p class="testidx"> </p>
-                <p><input type="submit" value="Exit"></p>
+                <p class="testidx"></p>
+                <p><input type="submit" id= "exit-btn" value="Exit"></p>
             </form>
-
         </div>
         
-        <div class="menuex2">
-
-            <form method="POST" >
-                {% csrf_token %}
-                <input type ="hidden" id ="idx_update2"  name="idx_update2" value ="">
-                <input type ="hidden"  name="forwhat" value ="book">
-                <p class="testidx2"> </p>
-                <p><input type="submit" value="mark"></p>
-            </form>
-            
-        </div>
     </div>
     
     <script type="text/javascript" src="../../../static/app/js/studyscript.js?ver=1">
