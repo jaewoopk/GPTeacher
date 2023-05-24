@@ -305,7 +305,8 @@ def exam(request) :
             user_id = request.session.get('user')
             current_user = appUser.objects.get(userid=user_id)
             msg = random.sample(range(1,100), 10)
-            return render(request, 'app/english/study2.html', {'message':msg} )
+            list = json.dumps(msg)
+            return render(request, 'app/english/study2.html', {'message':list} )
         else :
             return redirect('apps:login')
     
