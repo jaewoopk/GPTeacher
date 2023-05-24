@@ -11,51 +11,51 @@ let userCount = 0 ;
 const userInfo = [
     {   
         userName: "jenny",
-        userScore: "300",
+        userScore: "32000",
     },
     {   
         userName: "sunnny",
-        userScore: "350",
+        userScore: "28500",
 
     },
     {   
         userName: "chris",
-        userScore: "450",
+        userScore: "26600",
 
     },
     {   
         userName: "sam",
-        userScore: "540",
+        userScore: "24800",
 
     },
     {   
         userName: "mink",
-        userScore: "653",
+        userScore: "21000",
 
     },
     {   
         userName: "lee",
-        userScore: "659",
+        userScore: "20700",
 
     },
     {   
-        userName: "park",
-        userScore: "700",
+        userName: "jaewoopk",
+        userScore: "20500",
 
     },
     {   
         userName: "kim",
-        userScore: "850",
+        userScore: "19800",
 
     },
     {   
         userName: "joe",
-        userScore: "900",
+        userScore: "18700",
 
     },
     {   
         userName: "jessica",
-        userScore: "930",
+        userScore: "18650",
 
     }
 ];

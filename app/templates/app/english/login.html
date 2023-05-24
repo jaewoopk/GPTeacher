@@ -1,28 +1,80 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>EnglishStudy</title>
-    <link rel="stylesheet" href="../../../static/app/css/styles.css">
+    <link rel="stylesheet" href="../../../static/app/css/loginstyle.css">
 </head>
 
 <body>
-    <h1>Title</h1>
-    <h2>title</h2>
+  <div id="container">                            <!-- 메인 제목 -->
+    <h1 class="style-1">GPTeacher</h1>
+  </div>
+  <div id="container">                            <!-- 부 제목 -->
+    <h2 class="style-2">Your Personalized AI English Tutor</h2>
+  </div>
 
     <div id="menu">
         <a href="#"><b>Login</b></a>
-        <!--
-        <a href="main.html">Main</a>
-        <a href="study.html">Study</a>
-        <a href="rank.html">Rank</a>
-        <a href="mypage.html">Mypage</a>
-        -->
-    </div>
+    </div> 
 
-    <div class="login-form">
+    <div class="materialContainer">
+      <div class="box">
+        <div class="title">LOGIN</div>
+
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="input">
+            <label for="name">Username</label>
+              <input type="text" name="email" id="email"></br>
+            <span class="spin"></span>
+          </div>
+
+          <div class="input">
+            <label for="pass">Password</label>
+              <input type="password" name="password" id="password"></br>
+            <span class="spin"></span>
+          </div>
+          <div class="button login">
+            <button value="log"><span>Sign in</span> <i class="fa fa-check"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="overbox">
+        <div class="material-button alt-2"><span class="shape"></span></div>
+
+        <div class="title">REGISTER</div>
+
+        <div class="input">
+          <label for="regname">Username</label>
+          <input type="text" name="regname" id="regname">
+          <span class="spin"></span>
+        </div>
+
+        <div class="input">
+          <label for="regpass">Password</label>
+          <input type="password" name="regpass" id="regpass">
+          <span class="spin"></span>
+        </div>
+
+        <div class="input">
+          <label for="reregpass">Repeat Password</label>
+          <input type="password" name="reregpass" id="reregpass">
+          <span class="spin"></span>
+        </div>
+
+        <div class="button">
+          <button><span>Sign up</span></button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../../static/app/js/loginscript.js?ver=1"></script>
+    {% comment %} <div class="login-form">
         <form method="POST" enctype="multipart/form-data">
           {% csrf_token %}
           <input type="text" name="email" class="text-field" placeholder="id"><br>
@@ -33,9 +85,7 @@
         <div class="links">
           <a href="/app/english/join">회원가입</a>
         </div>
-    </div> 
-
-   
+    </div>  {% endcomment %}
 
 </body>
 </html>

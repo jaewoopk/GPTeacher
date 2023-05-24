@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from . import my_settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -103,9 +102,9 @@ WSGI_APPLICATION = 'projectweb.wsgi.application'
 DATABASES = {
     'default' : {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'capstone',
+        'NAME': 'Capstone_6',
         'USER': 'root',
-        'PASSWORD': 'whdgns4321!',
+        'PASSWORD': 'qkrwodn00!',
         'HOST': 'localhost',
         'PORT': '3306',
     }

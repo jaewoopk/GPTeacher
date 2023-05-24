@@ -16,15 +16,20 @@
 
 </head>
 <body>
-    <h1>Title</h1>
-    <h2>title</h2>
-
-    <div id="menu">
-        <a href="/app/english/main">Main</a>
-        <a href="#"><b>Study</b></a>
-        <a href="/app/english/rank">Rank</a>
-        <a href="/app/english/mypage">Mypage</a>
+    <div id="container">                            <!-- 메인 제목 -->
+        <h1 class="style-1">GPTeacher</h1>
     </div>
+    <div id="container">                            <!-- 부 제목 -->
+        <h2 class="style-2">Your Personalized AI English Tutor</h2>
+    </div>
+
+    <div id="menu">                                 <!-- 메뉴 -->
+        <a href="/app/english/main" data-hover="Main">Main</a>
+        <a href="#" data-hover="Study">Study</a>
+        <a href="/app/english/rank" data-hover="Rank">Rank</a>
+        <a href="/app/english/mypage" data-hover="Mypage"><b>Mypage</b></a>
+    </div>
+    
     <div class="content">
         <div class="chatGPT">
             <img src="../../../static/app/images/chatGPT.jpg" width="200" id="chatGPTimg">

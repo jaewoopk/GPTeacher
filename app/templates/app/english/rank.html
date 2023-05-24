@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnglishStudy</title>
-    <link rel="stylesheet" href="../../../static/app/css/styles.css">
+    <link rel="stylesheet" href="../../../static/app/css/mypagestyle.css">
     <link rel="stylesheet" href="../../../static/app/css/stylestwo.css">
     
 </head>
 <body>
-    <h1>Title</h1>
-    <h2>title</h2>
-
-    <div id="menu">
-        <a href="/app/english/main">Main</a>
-        <a href="/app/english/study">Study</a>
-        <a href="#"><b>Rank</b></a>
-        <a href="/app/english/mypage">Mypage</a>
+    <div id="container">                            <!-- 메인 제목 -->
+      <h1 class="style-1">GPTeacher</h1>
+    </div>
+    <div id="container">                            <!-- 부 제목 -->
+        <h2 class="style-2">Your Personalized AI English Tutor</h2>
     </div>
 
+    <div id="menu">                                 <!-- 메뉴 -->
+        <a href="/app/english/main" data-hover="Main">Main</a>
+        <a href="/app/english/study" data-hover="Study">Study</a>
+        <a href="#" data-hover="Rank">Rank</a>
+        <a href="/app/english/mypage" data-hover="Mypage"><b>Mypage</b></a>
+    </div>
     <div class="leaderboard">
         <h3>
           <svg class="ico-cup">

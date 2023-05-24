@@ -5,16 +5,15 @@ const privateScore = document.getElementById("myScore");    //유저 점수
 
 const privatInfo = [
     {   
-        userName: "jenny",
-        userScore: "300",
+        userName: user,
+        userScore: "20500",
     }
 ];
 
-
 function updateInfo(){
 
-    privateName.innerHTML = " ID : " + privatInfo[0].userName;
-    privateScore.innerHTML = " SCORE : " + privatInfo[0].userScore;
+    privateName.innerHTML = privatInfo[0].userName;
+    privateScore.innerHTML = " Your Score : " + privatInfo[0].userScore;
   
 };
   

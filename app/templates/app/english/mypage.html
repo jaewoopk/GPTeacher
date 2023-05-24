@@ -5,37 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnglishStudy</title>
-    <link rel="stylesheet" href="../../../static/app/css/styles.css">
-    <link rel="stylesheet" href="../../../static/app/css/stylestwo.css">
+    <link rel="stylesheet" href="../../../static/app/css/mypagestyle.css">
 
-    
 </head>
 <body>
-    <h1>Title</h1>
-    <h2>title</h2>
-
-    <div id="menu">
-        <!--
-        <a href="login.html">Login</a>
-        -->
-        <a href="/app/english/main">Main</a>
-        <a href="/app/english/study">Study</a>
-        <a href="/app/english/rank">Rank</a>
-        <a href="#"><b>Mypage</b></a>
+    <div id="container">                            <!-- 메인 제목 -->
+        <h1 class="style-1">GPTeacher</h1>
+    </div>
+    <div id="container">                            <!-- 부 제목 -->
+        <h2 class="style-2">Your Personalized AI English Tutor</h2>
     </div>
 
-    <div id="mypageJust">
-        <h3>information</h3>
+    <div id="menu">                                 <!-- 메뉴 -->
+        <a href="/app/english/main" data-hover="Main">Main</a>
+        <a href="/app/english/study" data-hover="Study">Study</a>
+        <a href="/app/english/rank" data-hover="Rank">Rank</a>
+        <a href="#" data-hover="Mypage"><b>Mypage</b></a>
     </div>
 
-    <div class="mypageUSer">
-        <div class="info">
-            <p id="myId"></p>
-            <p id="myScore"></p>
-            <a href="study.html"> STUDY </a>
+    {% comment %} <div class="back color-3">
+        <div class="row columns">
+          <h3>Effect 13</h3>
+          <ul class="menu align-center expanded text-center SMN_effect-13">
+            <li><a href="" data-hover="Home"><span>Home</span></a></li>
+            <li><a href="" data-hover="About"><span>About</span></a></li>
+            <li><a href="" data-hover="Gallery"><span>Gallery</span></a></li>
+            <li><a href="" data-hover="Notes"><span>Notes</span></a></li>
+            <li><a href="" data-hover="Contact"><span>Contact</span></a></li>
+          </ul>
         </div>
+    </div> {% endcomment %}
+    <div class="mypageId alt-id">
+        <h2>ID</h2>
+        <h1 id="myId"></h1>
+        <span>The most certain way to succeed is always to try just one more time.</span>
+        <h3></h3>
     </div>
 
-    <script src="../../../static/app/js/mypagescript.js"></script>
+    <div class="mypageInfo">
+        <div class="info">
+            <p></p>
+            <p id="myScore"></p>
+        </div>
+        <ol class="Questions">
+            <a></a>
+            <li><a href="../study" data-hover="Question 12">Question 12</a></li>
+            <li><a href="../study" data-hover="Question 25">Question 25</a></li>
+            <li><a href="../study" data-hover="Question 27">Question 27</a></li>
+            <li><a href="../study" data-hover="Question 41">Question 41</a></li>
+            <li><a href="../study" data-hover="Question 50">Question 50</a></li>
+            <a></a>
+        </ol>
+    </div>
+    <script type="text/javascript">
+        var user = "{{user}}";
+    </script>
+    <script type="text/javascript" src="../../../static/app/js/mypagescript.js?ver=1"></script>
 </body>
 </html>
