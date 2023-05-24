@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishStudy</title>
+    <link rel="stylesheet" href="../../../static/app/css/styles.css">
+    <link rel="stylesheet" href="../../../static/app/css/stylestwo.css">
+    <script type="text/javascript" >
+        var test = "{{message}}";
+    </script>
+
+</head>
+<body>
+    <div id="container">                            <!-- 메인 제목 -->
+        <h1 class="style-1">GPTeacher</h1>
+    </div>
+    <div id="container">                            <!-- 부 제목 -->
+        <h2 class="style-2">Your Personalized AI English Tutor</h2>
+    </div>
+
+    <div id="menu">                                 <!-- 메뉴 -->
+        <a href="/app/english/main" data-hover="Main">Main</a>
+        <a href="#" data-hover="Study">Study</a>
+        <a href="/app/english/rank" data-hover="Rank">Rank</a>
+        <a href="/app/english/mypage" data-hover="Mypage"><b>Mypage</b></a>
+    </div>
+    
+    <div class="content">
+        <div class="chatGPT">
+            <img src="../../../static/app/images/chatGPT.jpg" width="200" id="chatGPTimg">
+
+            <div class = quiz>
+                <span class="effectGPT"></span>
+                <span class="effectGPT"></span>
+                <span class="effectGPT"></span>
+                <span class="effectGPT"></span>
+                <span class="quiz_type"></span>
+                <div class="quiz_question">
+                    <span class="number"></span>
+                    <div class="ask"></div>
+                </div>
+
+                <div class="quiz_try">
+                    <div class="quiz_selects">
+                        <form name="select_big">
+                            <label for="select1">
+                                <input type="radio" id="select1" class="select" name="userAns" value="1" >
+                                <span class="choice"></span><br>
+                            </label>
+    
+                            <label for="select2">
+                                <input type="radio" id="select2" class="select" name="userAns" value="2" >
+                                <span class="choice"></span><br>
+                            </label>
+    
+                            <label for="select3">
+                                <input type="radio" id="select3" class="select" name="userAns" value="3" >
+                                <span class="choice"></span><br>
+                            </label>
+    
+                            <label for="select4">
+                                <input type="radio" id="select4" class="select" name="userAns" value="4" >
+                                <span class="choice"></span><br>
+
+                            </label>
+                        </form>
+                    </div>
+
+                    <input type="submit" value="submit" class="confirm" id="ans-btn"><br>
+                    <div class="result"></div>
+
+                    <form name="control-quiz">
+                        <input type="button" value="▷" id="next-btn">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../static/app/js/studyscript2.js?ver=1">
+        var test = "{{message}}";
+    </script>
+
+</body>
+</html>

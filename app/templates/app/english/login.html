@@ -29,14 +29,12 @@
         <form method="POST" enctype="multipart/form-data">
           {% csrf_token %}
           <div class="input">
-            <label for="name">Username</label>
-              <input type="text" name="email" id="email"></br>
+            <input type="text" name="email" id="email" placeholder="id"></br>
             <span class="spin"></span>
           </div>
 
           <div class="input">
-            <label for="pass">Password</label>
-              <input type="password" name="password" id="password"></br>
+            <input type="password" name="password" id="password" placeholder="password"></br>
             <span class="spin"></span>
           </div>
           <div class="button login">

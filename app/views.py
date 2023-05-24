@@ -15,6 +15,7 @@ from .models import User as appUser
 from .models import Sentencedata
 from django.views.decorators.csrf import csrf_exempt
 import json
+import random
 
 OPENAI_API_KEY = "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"
 openai.api_key = OPENAI_API_KEY
@@ -144,7 +145,6 @@ def login(request) :
 
         if not (log_username and log_password) :
             response_data['error'] = '전부 입력해야 합니다'
-            print("error1")
         else :
             entry = appUser.objects.filter(userid=log_username)
             if entry.exists() :
@@ -175,8 +175,6 @@ def main(request) :
 
 def study(request) :
     if request.method == 'GET' :
-
-
         if 'user' in request.session:
             user_id = request.session.get('user')
             current_user = appUser.objects.get(userid=user_id)
@@ -191,7 +189,6 @@ def study(request) :
                 GPT_respond = GPT_respond.replace("\n", "")
                 return render(request, 'app/english/study.html', {'message':msg,'GPT_respond':GPT_respond} )
             else:
-            #deuser.id = request.session['user']
                 GPT_respond = ""
                 return render(request, 'app/english/study.html', {'message':msg,'GPT_respond':GPT_respond} )
         else :
@@ -244,6 +241,7 @@ def study(request) :
             GPT_respond = str(GPT_respond)
             GPT_respond = GPT_respond.replace("\n", "")
             return JsonResponse({"GPT_respond_ajax":GPT_respond})
+
 def rank(request) :
     if request.method == 'GET' :
         if 'user' in request.session:
@@ -299,6 +297,21 @@ def bookmark(request, page) :
             return render(request, 'app/english/study.html', {'message':msg} )
         else :
             return redirect('apps:login')
+
+
+def exam(request) :
+    if request.method == 'GET' :
+        if 'user' in request.session:
+            user_id = request.session.get('user')
+            current_user = appUser.objects.get(userid=user_id)
+            msg = random.sample(range(1,100), 10)
+            return render(request, 'app/english/study2.html', {'message':msg} )
+        else :
+            return redirect('apps:login')
+    
+    else :
+        return redirect('apps:main')
+
 # # --> FBV : Function Based View = 함수 기반 뷰
 # @api_view(['GET']) # Decorator -> 함수를 꾸미는 역할(함수에 대한 성격을 표시해주는 표기법)
 # def HelloAPI(request) :
