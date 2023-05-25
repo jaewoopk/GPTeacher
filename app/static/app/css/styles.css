@@ -571,6 +571,68 @@ h3 {
     box-shadow: 0px 0px 0px 0px #922c29;
 }
 
+/* study - gpt 추가질문 */
+
+.user #user_gpt_id_text {
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+    background-color: #c16458;
+    padding: 7px;  
+    border-radius: 5px;
+    color: #FFF;
+}
+
+
+.user #user_gpt_id {
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 70%;
+    overflow-wrap: break-word;
+    background-color: #c16458;
+    padding: 7px;  
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.user #ask_gpt {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+    background-color: #c16458;
+    padding: 7px; 
+    border-radius: 5px; 
+    color: #FFF;
+}
+
+.user #ask_gpt:hover {
+    background-color:  #af4d40;
+}
+
+.user .gpt_respond_message {
+    position:relative;
+    width:800px;
+    height:100px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+    background-color: #abc4cf;
+    padding: 7px;  
+    border-radius: 5px;
+    color: #000000;
+    overflow-wrap: break-word;
+    overflow : auto;
+}
+
+
 
 
 /* rank
