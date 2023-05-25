@@ -1,3 +1,8 @@
+var regiforname;
+var regiforpass;
+var regiforrepass;
+var csrfToken = document.getElementsByName('csrfmiddlewaretoken')[0].value;
+
 $(function() {
 
     $(".input input").focus(function() {
@@ -35,7 +40,50 @@ $(function() {
           pY = e.pageY,
           oX = parseInt($(this).offset().left),
           oY = parseInt($(this).offset().top);
- 
+          console.log("qddda");
+          
+          regiforname = document.getElementById('regname').value;
+          regiforpass = document.getElementById('regpass').value;
+          regiforrepass= document.getElementById('reregpass').value;
+          console.log(regiforname);
+          console.log(regiforpass);
+          console.log(regiforrepass);
+
+          var formLayout = document.createElement("form"); 
+    	 	 formLayout.setAttribute("charset", "UTF-8");
+    		 formLayout.setAttribute("method", "POST"); 
+    		 formLayout.setAttribute("action", "/app/english/join/");
+
+    		 var emailLayout = document.createElement("input"); 
+    		 emailLayout.setAttribute("type", "text");
+    		 emailLayout.setAttribute("name", "email");
+    		 emailLayout.setAttribute("value", regiforname);
+    		 formLayout.appendChild(emailLayout); 
+
+    		 var passLayout = document.createElement("input"); 
+    		 passLayout.setAttribute("type", "text");
+    		 passLayout.setAttribute("name", "password");
+    		 passLayout.setAttribute("value", regiforpass);
+    		 formLayout.appendChild(passLayout); 
+
+          var repassLayout = document.createElement("input");
+          repassLayout.setAttribute("type", "text");
+          repassLayout.setAttribute("name", "repassword");
+          repassLayout.setAttribute("value", regiforpass);
+    		 formLayout.appendChild(repassLayout); 
+
+          var csrftoken = document.createElement("input");
+          csrftoken.setAttribute("type", "hidden");
+          csrftoken.setAttribute("name", 'csrfmiddlewaretoken');
+          csrftoken.setAttribute("value", csrfToken);
+          formLayout.appendChild(csrftoken); 
+
+    		 document.body.appendChild(formLayout); 
+    		 formLayout.submit(); 
+    		 document.body.removeChild(formLayout);  
+
+          console.log("emd");
+
        $(this).append('<span class="click-efect x-' + oX + ' y-' + oY + '" style="margin-left:' + (pX - oX) + 'px;margin-top:' + (pY - oY) + 'px;"></span>')
        $('.x-' + oX + '.y-' + oY + '').animate({
           "width": "500px",

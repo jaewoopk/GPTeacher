@@ -109,24 +109,27 @@ def register(request):
     elif request.method == 'POST':
         username = request.POST.get('email', None)
         password = request.POST.get('password', None)
-        re_password = request.POST.get('password', None)
-        print(request.POST['email'])
-        print(request.POST['password'])
+        re_password = request.POST.get('repassword', None)
+        print("em" + request.POST['email'])
+        print("pa" + request.POST['password'])
+        print("repa" + request.POST['repassword'])
 
         res_data = {}
 
         if not (username and password and re_password):
             res_data['error'] = '전부 입력해야 합니다'
             print("error1")
+            return redirect('apps:login')
         elif password != re_password:
             res_data['error'] = '비밀번호가 다릅니다'
             print("error2")
+            return redirect('apps:login')
         else:
             print("error999")
             entry = appUser.objects.filter(userid=username)
             if entry.exists():
                 res_data['error'] = '아이디 중복'
-                return render(request, 'app/english/join.html', res_data)
+                return redirect('apps:login')
             else:
                 user = appUser(userid=username, password=make_password(password))
                 user.save()
@@ -142,7 +145,16 @@ def login(request) :
     elif request.method == 'POST' :
         log_username = request.POST.get('email', None)
         log_password = request.POST.get('password', None)
-
+        reg_username = request.POST.get('regname', None)
+        reg_password = request.POST.get('regpass', None)
+        reg_repassword = request.POST.get('reregpass', None)
+        print("--------------")
+        print(log_username)
+        print(log_password)
+        print(reg_username)
+        print(reg_password)
+        print(reg_repassword)
+        print("--------------")
         if not (log_username and log_password) :
             response_data['error'] = '전부 입력해야 합니다'
         else :
@@ -170,6 +182,8 @@ def main(request) :
         if 'user' in request.session:
 
             return render(request, 'app/english/main.html')
+        else :
+            return redirect('apps:login')
 
 @csrf_exempt
 

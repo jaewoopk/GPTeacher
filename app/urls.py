@@ -19,7 +19,7 @@ urlpatterns = [
     #path('english/study/', study.as_view(), name= 'study'),
     path('english/jointtest/', jointest.as_view(), name= 'test'),
 
-    path('english/join/', views.join),
+    path('english/join/', views.register, name= 'join'),
     path('english/login/', views.login, name= 'login'),
 
     path('english/main/', views.main, name= 'main'),
