@@ -6,7 +6,7 @@ const privateScore = document.getElementById("myScore");    //유저 점수
 const privatInfo = [
     {   
         userName: user,
-        userScore: "20500",
+        userScore: score,
     }
 ];
 

@@ -261,7 +261,7 @@ def mypage(request) :
             mark = book.split(',')
 
             
-            return render(request, 'app/english/mypage.html',{'user':current_user.userid})
+            return render(request, 'app/english/mypage.html',{'user':current_user.userid, 'score' : current_user.score})
         else :
             return redirect('apps:login')
 
