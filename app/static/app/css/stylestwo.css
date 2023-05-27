@@ -346,20 +346,26 @@ body {
     align-items: center;
     justify-content: center;
 }
-  
+
+.checkman {
+    width: 20%;
+    margin-left: 80px;
+    margin-right:5px;
+}
+
 
 .man {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    height: 360px;
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    height: 150px;
     align-items: center;
+    float: left;
 }
 
 .head {
-    width: 70px;
-    height: 70px;
+    width: 25px;
+    height: 25px;
     background-color: #000000;
     border-radius: 50%;
     animation-name: body;
@@ -369,13 +375,13 @@ body {
 }
 
 .body {
-    height: 144px;
-    width: 62px;
+    height: 50px;
+    width: 25px;
     background-color: #000000;
     border-radius: 100% 20% 0 0;
     transform: skewX(-2deg);
     position: relative;
-    left: -50px;
+    left: -20px;
     animation-name: body;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -383,8 +389,8 @@ body {
 }
 
 .foot {
-    width: 40px;
-    height: 14px;
+    width: 15px;
+    height: 5px;
     border-radius: 10px 80% 4px 4px;
     transform: skewX(5deg);
     background-color: #000000;
@@ -395,27 +401,27 @@ body {
 }
 
 .foot:last-child {
-    margin-left: -40px;
+    margin-left: -5px;
     animation-delay: 0.9s;
 }
 
 .feet {
     text-align: left;
     position: relative;
-    top: 100px;
-    left: -66px;
+    top: 30px;
+    left: -33px;
 }
 
 
 .feet:before {
-    width: 120px;
-    height: 8px;
+    width: 35px;
+    height: 6px;
     border-radius: 50%;
     content: "";
     background: rgba(0, 0, 0, 0.1);
     position: absolute;
-    bottom: -2px;
-    left: -16px;
+    bottom: -1px;
+    left: 2px;
     animation-name: shadow;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -424,16 +430,16 @@ body {
 
 @keyframes foot {
     20% {
-      transform: translate3d(34px, -16px, 0) rotate(4deg);
+      transform: translate3d(20px, -10px, 0) rotate(4deg);
     }
     26% {
-      transform: translate3d(34px, -10px, 4) rotate(0deg);
+      transform: translate3d(20px, -8px, 1) rotate(0deg);
     }
     40% {
-      transform: translate3d(56px, -6px, 0) rotate(-6deg);
+      transform: translate3d(40px, -3px, 0) rotate(-6deg);
     }
     44% {
-      transform: translate3d(56px, 0, 0) rotate(0deg);
+      transform: translate3d(40px, 0, 0) rotate(0deg);
     }
 
 }
@@ -454,21 +460,21 @@ body {
 
 @keyframes shadow {
     25% {
-      transform: scale(1.1);
+      transform: scale(0.96);
     }
     75% {
-      transform: scale(0.96);
+      transform: scale(0.80);
     }
 }
 
 .positive .head {
-    width: 70px;
-    height: 70px;
+    width: 25px;
+    height: 25px;
     background-color: #1100c7;
     border-radius: 50%;
     position: relative;
-    top : -10px;
-    left: -50px;
+    top : -5px;
+    left: -20px;
     animation-name: body;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -477,13 +483,13 @@ body {
 
 
 .positive .body {
-    height: 144px;
-    width: 62px;
+    height: 50px;
+    width: 25px;
     background-color: #1100c7;
     border-radius: 50% 50% 0 0;
     transform: skewX(-2deg);
     position: relative;
-    left: -50px;
+    left: -25px;
     animation-name: body;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -491,8 +497,8 @@ body {
 }
 
 .positive .foot {
-    width: 40px;
-    height: 14px;
+    width: 15px;
+    height: 5px;
     border-radius: 10px 80% 4px 4px;
     transform: skewX(5deg);
     background-color: #1100c7;
@@ -503,27 +509,27 @@ body {
 }
 
 .positive .foot:last-child {
-    margin-left: -40px;
+    margin-left: -5px;
     animation-delay: 0.9s;
 }
 
 .positive .feet {
     text-align: left;
     position: relative;
-    top: 100px;
-    left: -66px;
+    top: 30px;
+    left: -33px;
 }
 
 
 .positive .feet:before {
-    width: 120px;
-    height: 8px;
+    width: 35px;
+    height: 6px;
     border-radius: 50%;
     content: "";
     background: rgba(0, 0, 0, 0.1);
     position: absolute;
-    bottom: -2px;
-    left: -16px;
+    bottom: -1px;
+    left: 2px;
     animation-name: shadow;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -533,8 +539,8 @@ body {
 
 
 .negative .head {
-    width: 70px;
-    height: 70px;
+    width: 25px;
+    height: 25px;
     background-color: #b60511;
     border-radius: 50%;
     animation-name: body;
@@ -545,13 +551,13 @@ body {
 
 
 .negative .body {
-    height: 144px;
-    width: 62px;
+    height: 50px;
+    width: 25px;
     background-color: #b60511;
     border-radius: 100% 20% 0% 0%;
     transform: skewX(-2deg);
     position: relative;
-    left: -50px;
+    left: -20px;
     animation-name: body;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -559,8 +565,8 @@ body {
 }
 
 .negative .foot {
-    width: 40px;
-    height: 14px;
+    width: 15px;
+    height: 5px;
     border-radius: 10px 80% 4px 4px;
     transform: skewX(5deg);
     background-color: #b60511;
@@ -571,70 +577,69 @@ body {
 }
 
 .negative .foot:last-child {
-    margin-left: -40px;
+    margin-left: -5px;
     animation-delay: 0.9s;
 }
 
 .negative .feet {
     text-align: left;
     position: relative;
-    top: 100px;
-    left: -66px;
+    top: 30px;
+    left: -33px;
 }
 
 
 .negative .feet:before {
-    width: 120px;
-    height: 8px;
+    width: 35px;
+    height: 6px;
     border-radius: 50%;
     content: "";
     background: rgba(0, 0, 0, 0.1);
     position: absolute;
-    bottom: -2px;
-    left: -16px;
+    bottom: -1px;
+    left: 2px;
     animation-name: shadow;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-.user .man .yes {
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
+.checkman .man .yes {
+    width: 30px;
+    height: 30px;
     background-color: #1100c7;
     color: #fff;
-    border: 5px solid #303bff; 
+    border: 1px solid #303bff; 
     border-radius: 50%;
     text-align: center;
     position: relative;
-    left: 200px;
-    bottom: 200px;
     opacity: 0;
+    left: 25px;
+    bottom : 50px;
+   
 }
 
 
-.user .man .no {
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
+.checkman .man .no {
+    width: 30px;
+    height: 30px;
     background-color: #b60511;
     color: #fff;
-    border: 5px solid #f12936; 
+    border: 1px solid #f12936; 
     border-radius: 50%;
     text-align: center;
     position: relative;
-    left: -280px;
-    bottom: 300px;
     opacity: 0;
+    left: 30px;
+    bottom : 50px;
 }
 
-.user.positive .yes {
+.checkman.positive .yes {
     opacity: 1;
     animation: wobble 0.6s;
 }
 
-.user.negative .no {
+.checkman.negative .no {
     opacity: 1;
     animation: wobble 0.6s;
 }

@@ -394,7 +394,7 @@ h3 {
 
 /*추가!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .quiz_selects {
-    margin-bottom : 30px;
+    margin-bottom : 10px;
 }
 
 
@@ -451,28 +451,37 @@ h3 {
     border-radius: 5px;
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 260px;  /*추가!!!!!!!!!!!!!!!!!!11*/
+    margin-left: 100px;  /*추가!!!!!!!!!!!!!!!!!!11*/
     float: left;
     box-shadow: 0px 5px 0px 0px #ae7a73;
     line-height: 25px;
     cursor: pointer;
 }
 
+
 #book-btn {
     font-size: 14px;
-    background-color:  #b0433f;
+    background-color:  hsl(348, 66%, 42%);
     color: #FFF;
-    width: 95px;
+    width: 80px;
     padding: 15;
-    border-radius: 100px;
     margin-top: 5px;
     margin-bottom: 10px;
-    float: left;
-    margin-left: 285px;  /*추가!!!!!!!!!!!!!!!!!!11*/
+    margin-right: 20px;
+    float: right;
     line-height: 25px;
     text-transform: uppercase;
     text-align: center;
-    border: .15em solid #b0433f;
+    border: 2px solid #000000;
+    border-radius: 5px 50% 50% 5px;
+    cursor: pointer;
+}
+
+#bmImg {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    float: right;
 }
 
 
@@ -484,11 +493,13 @@ h3 {
     padding: 3px;
     border: 5px double #146181;
     border-radius: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     float: right;
+    margin-top: 25px;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: -100px;
     cursor: pointer;
+   
 }
 
 #before-btn {
@@ -499,10 +510,11 @@ h3 {
     padding: 3px;
     border: 5px double #146181;
     border-radius: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     float: right;
+    margin-top: 25px;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: -35px;
     cursor: pointer;
 }
 
@@ -515,7 +527,8 @@ h3 {
 
 
 .content .chatGPT #book-btn:hover {
-    background-color:  #7e2623;;
+    background-color:  #7e2623;
+    transform: scale(1.2);
 }
 
 
