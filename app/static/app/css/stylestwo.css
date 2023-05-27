@@ -598,7 +598,7 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-.user .yes {
+.user .man .yes {
     width: 120px;
     height: 120px;
     line-height: 120px;
@@ -607,14 +607,14 @@ body {
     border: 5px solid #303bff; 
     border-radius: 50%;
     text-align: center;
-    position: absolute;
-    left: 60%;
-    top: 500px;
+    position: relative;
+    left: 200px;
+    bottom: 200px;
     opacity: 0;
 }
 
 
-.user .no {
+.user .man .no {
     width: 120px;
     height: 120px;
     line-height: 120px;
@@ -623,9 +623,9 @@ body {
     border: 5px solid #f12936; 
     border-radius: 50%;
     text-align: center;
-    position: absolute;
-    right: 70%;
-    top: 500px;
+    position: relative;
+    left: -280px;
+    bottom: 300px;
     opacity: 0;
 }
 

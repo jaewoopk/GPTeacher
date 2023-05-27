@@ -597,18 +597,17 @@ h3 {
     padding: 7px;  
     border-radius: 5px;
     color: #FFF;
+    white-space: nowrap;
 }
 
 .user #ask_gpt {
-    margin-top: 0;
     margin-left: 10px;
-    margin-right: 20px;
-    margin-bottom: 30px;
     overflow-wrap: break-word;
     background-color: #c16458;
     padding: 7px; 
     border-radius: 5px; 
     color: #FFF;
+    float: right;
 }
 
 .user #ask_gpt:hover {
@@ -617,8 +616,6 @@ h3 {
 
 .user .gpt_respond_message {
     position:relative;
-    width:800px;
-    height:100px;
     margin-top: 10px;
     margin-left: 40px;
     margin-right: 40px;

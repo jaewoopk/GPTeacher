@@ -17,7 +17,8 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 import random
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
+
 openai.api_key = OPENAI_API_KEY
 
 class RegisterView(generics.CreateAPIView) : # CreateAPIView(generics) 사용 구현
@@ -133,7 +134,7 @@ def register(request):
             else:
                 user = appUser(userid=username, password=make_password(password))
                 user.save()
-                return redirect('apps:main')
+                return redirect('apps:login')
         return render(request, 'app/english/join.html', res_data)
         
 def login(request) :
@@ -273,7 +274,7 @@ def mypage(request) :
             mark = book.split(',')
 
             
-            return render(request, 'app/english/mypage.html')
+            return render(request, 'app/english/mypage.html',{'user':current_user.userid})
         else :
             return redirect('apps:login')
 
