@@ -111,10 +111,6 @@ def register(request):
         username = request.POST.get('email', None)
         password = request.POST.get('password', None)
         re_password = request.POST.get('repassword', None)
-        print("em" + request.POST['email'])
-        print("pa" + request.POST['password'])
-        print("repa" + request.POST['repassword'])
-
         res_data = {}
 
         if not (username and password and re_password):
@@ -146,16 +142,7 @@ def login(request) :
     elif request.method == 'POST' :
         log_username = request.POST.get('email', None)
         log_password = request.POST.get('password', None)
-        reg_username = request.POST.get('regname', None)
-        reg_password = request.POST.get('regpass', None)
-        reg_repassword = request.POST.get('reregpass', None)
-        print("--------------")
-        print(log_username)
-        print(log_password)
-        print(reg_username)
-        print(reg_password)
-        print(reg_repassword)
-        print("--------------")
+        
         if not (log_username and log_password) :
             response_data['error'] = '전부 입력해야 합니다'
         else :
@@ -305,6 +292,7 @@ def GPTeacher_answer(text1,text2,text3):
     chat_response = completion.choices[0].message.content
 
     return chat_response
+
 def bookmark(request, page) :
     if request.method == 'GET' :
         if request.session.get('user') != None :
@@ -326,6 +314,17 @@ def exam(request) :
             return redirect('apps:login')
     
     else :
+        if 'user' in request.session:
+            user_id = request.session.get('user')
+            current_user = appUser.objects.get(userid=user_id)
+            updatescore = request.POST.get('updatescore', None)
+
+            current_user.score = updatescore
+            current_user.save()
+            return redirect('apps:main')
+        else :
+            return redirect('apps:login')
+
         return redirect('apps:main')
 
 # # --> FBV : Function Based View = 함수 기반 뷰

@@ -19,6 +19,10 @@ const quizNext = document.getElementById("next-btn");
 
 var mylist = JSON.parse(test)
 
+var quizscore = 0;
+
+const url = "/app/english/exam/";
+var data = {};
 
 var idx = localStorage.getItem('quizIndex') ? parseInt(localStorage.getItem('quizIndex')) : 0;
 var number;
@@ -33,10 +37,28 @@ xhr.onreadystatechange = function () {
 };
 xhr.send();
 
+function getCookie(name) {
+  var cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i].trim();
+          // Does this cookie string begin with the name we want?
+          if (cookie.substring(0, name.length + 1) === (name + '=')) {
+              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+              break;
+          }
+      }
+  }
+  return cookieValue;
+}
+
+var examcsrftoken = getCookie('csrftoken');
+
 function initializeQuizInfo(data) {
   idx = 0;
   quizInfo = data;
-
+  quizscore = 0;
   updateQuiz(idx); // 초기화 후 문제를 업데이트합니다.
 };
 
@@ -63,12 +85,33 @@ function quiz_select_init()
 }
 
 function nextQuiz() {
-  if (idx < 10) {
+  if (idx < 9) {
     localStorage.setItem('quizIndex', idx);  // idx 값을 로컬 저장소에 저장
     idx += 1;
     updateQuiz(idx);
   } else {
-    alert("No more quizzes");
+    alert("No more quizzes : " + quizscore);
+
+    var formLayout = document.createElement("form"); 
+    formLayout.setAttribute("charset", "UTF-8");
+    formLayout.setAttribute("method", "POST"); 
+    formLayout.setAttribute("action", "/app/english/exam/");
+
+    var emailLayout = document.createElement("input"); 
+    emailLayout.setAttribute("type", "text");
+    emailLayout.setAttribute("name", 'updatescore');
+    emailLayout.setAttribute("value", quizscore);
+    formLayout.appendChild(emailLayout); 
+
+    var csrftoken = document.createElement("input");
+    csrftoken.setAttribute("type", "hidden");
+    csrftoken.setAttribute("name", 'csrfmiddlewaretoken');
+    csrftoken.setAttribute("value", examcsrftoken);
+    formLayout.appendChild(csrftoken); 
+
+    document.body.appendChild(formLayout); 
+    formLayout.submit(); 
+    document.body.removeChild(formLayout); 
   }
 
 };
@@ -87,33 +130,24 @@ function answerQuiz() {
     }
   }
 
-  switch (quizInfo[idx].sentenCeDAtA_AnswerworD) {
+  switch (quizInfo[mylist[idx]].sentenCeDAtA_AnswerworD) {
     case ("A") :
-      answerValue = quizInfo[idx].sentenceData_word1;
+      answerValue = quizInfo[mylist[idx]].sentenceData_word1;
       break ;
     case ("B") :
-      answerValue = quizInfo[idx].sentenceData_word2;
+      answerValue = quizInfo[mylist[idx]].sentenceData_word2;
       break ;
     case ("C") :
-      answerValue = quizInfo[idx].sentenceData_word3;
+      answerValue = quizInfo[mylist[idx]].sentenceData_word3;
       break ;
     case ("D") :
-      answerValue = quizInfo[idx].sentenceData_word4;
+      answerValue = quizInfo[mylist[idx]].sentenceData_word4;
       break ;
   }
   if (selectedValue === answerValue) {
-    quizView.classList.remove("negative");
-    quizView.classList.add("positive");
-
-    document.getElementById("user_gpt_id").style.display ='block';
-    document.getElementById("user_gpt_id_text").style.display ='block';
-    document.getElementById("ask_gpt").style.display ='block';
-    document.getElementById("user_answer_to_view").value = quizInfo[idx].sentenceData_contents + " blank is " + answerValue;
-
-  } else {
-    quizView.classList.remove("positive");
-    quizView.classList.add("negative");
-  }
+    quizscore += 10;
+  } 
+  nextQuiz()
 };
 
 quizconfirm.addEventListener("click", answerQuiz);
