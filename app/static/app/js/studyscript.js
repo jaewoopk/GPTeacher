@@ -11,7 +11,7 @@ var quizSelects = document.querySelector(".quiz_selects");
 var quizChoice = quizSelects.querySelectorAll(".choice");
 var quizSelect = quizSelects.querySelectorAll(".select");
 
-const quizView = document.querySelector(".user");             
+const quizView = document.querySelector(".checkman");             
 
 var quizInfo = [];
 var quiz_select_store = []; //  0-> 초기입력 줄바꿈 제거   1~4 -> 0 : none  1 : 입력
