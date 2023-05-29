@@ -32,7 +32,7 @@
     
     <div class="content">
         <div class="chatGPT">
-            <img src="../../../static/app/images/chatGPT.jpg" width="200" id="chatGPTimg">
+            <img src="../../../static/app/images/chatGPT.gif" width="200" id="chatGPTimg">
 
             <div class = quiz>
                 <span class="effectGPT"></span>
@@ -99,6 +99,7 @@
                         </form> 
                     </div>
             
+                    <h1> </h1>
                     
                     <form name="control-quiz">
                         <input type="button" value="▷" id="next-btn">
@@ -113,18 +114,18 @@
         <div class="user">
             <div class="explanation"></div>
             <p id="user_gpt_id_text"> GPT 에게 추가질문 입력하기</p>
+            <div class="gpt_respond_message"></div>
             <form method="GET" name="user_to_gpt_form_name">
                 {% csrf_token %}
-                <input type="text" id = "user_gpt_id" name="user_gpt" class="user_gpt_ask" value =""  >
+                <input type ="button" value="Ask" id="ask_gpt"  >
                 <input type ="hidden"  name="user_gpt_id_hidden" value="user_gpt_id_ok" >
                 <input type ="hidden"  name="user_answer_to_view" id="user_answer_to_view" value="">
                 <input type ="hidden"  name="gpt_answer_to_view" id="gpt_answer_to_view" value="">
-                <input type="button" value="대답해줘" id="ask_gpt"  >
+                <input type="text" id = "user_gpt_id" name="user_gpt" class="user_gpt_ask" value =""  >
             </form>
-            <div class="gpt_respond_message"></div>
           
        
-            <div class="score">score:300</div>
+            <div class="score">score : 0</div>
         </div>
 
 
