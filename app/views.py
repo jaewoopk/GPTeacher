@@ -17,7 +17,7 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 import random
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 
 openai.api_key = OPENAI_API_KEY
 
