@@ -29,5 +29,5 @@ urlpatterns = [
 
     path('english/logout/', views.logout, name= 'out'),
     path('english/exam/', views.exam, name= 'exam'),
-    #path('english/book/', views.logout, mark = 'book'),
+    path('english/book/<int:page>/', views.bookmark, name= 'book'),
 ]

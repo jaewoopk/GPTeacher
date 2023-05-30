@@ -296,8 +296,12 @@ def GPTeacher_answer(text1,text2,text3):
 def bookmark(request, page) :
     if request.method == 'GET' :
         if request.session.get('user') != None :
+            user_id = request.session.get('user')
+            current_user = appUser.objects.get(userid=user_id)
+            current_user.user_idx = page
             msg = page
-            return render(request, 'app/english/study.html', {'message':msg} )
+            current_user.save()
+            return redirect('apps:study')
         else :
             return redirect('apps:login')
 
